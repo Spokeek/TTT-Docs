@@ -1,0 +1,38 @@
+.TutorialContainer {
+
+  display: grid;
+
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  grid-auto-flow: row;
+}
+
+.TutorialCardTop {
+  position: relative;
+  width: 100%;
+  border: solid rgb(180, 180, 180);
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.TutorialCardText {
+  height: 20%;
+  width: 100%;
+  color: rgb(48, 48, 48);
+  background-color: white;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+}
+
+.TutorialCardGradient {
+  position: absolute;
+  bottom: 20%;
+
+  height: 75%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(256, 256, 256, 256), rgba(256, 256, 256, 0));
+}
