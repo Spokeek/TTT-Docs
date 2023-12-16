@@ -23,7 +23,7 @@ const tpCards = [
   },
 
   // {
-  //   imageSrc: require("@site/static/img/docusaurus-social-card.jpg").default,
+  //   imageSrc: require("@site/static/img/").default,
   //   text: "PSD Improter",
   //   jumpLink: "/docs/Tutorial/PSDInporter-Tutorial",
   // }
