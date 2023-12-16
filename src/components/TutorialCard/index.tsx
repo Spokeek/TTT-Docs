@@ -11,22 +11,22 @@ interface CardProps {
 const tpCards = [
 
   {
-    imageSrc: require("@site/static/img/docusaurus-social-card.jpg").default,
+    imageSrc: require("@site/static/img/TutorialCard/AtlasTexture-TutorialHeader.png").default,
     text: "AtlasTexture",
     jumpLink: "/docs/Tutorial/AtlasTexture-Tutorial",
   },
   
   {
-    imageSrc: require("@site/static/img/docusaurus-social-card.jpg").default,
+    imageSrc: require("@site/static/img/TutorialCard/SimpleDecal-TutorialHeader.png").default,
     text: "SimpleDecal",
     jumpLink: "/docs/Tutorial/SimpleDecal-Tutorial",
   },
 
-  {
-    imageSrc: require("@site/static/img/docusaurus-social-card.jpg").default,
-    text: "PSD Improter",
-    jumpLink: "/docs/Tutorial/PSDInporter-Tutorial",
-  }
+  // {
+  //   imageSrc: require("@site/static/img/docusaurus-social-card.jpg").default,
+  //   text: "PSD Improter",
+  //   jumpLink: "/docs/Tutorial/PSDInporter-Tutorial",
+  // }
 ]
 
 

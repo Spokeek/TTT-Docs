@@ -11,8 +11,9 @@
 .TutorialCardTop {
   position: relative;
   width: 100%;
-  border: solid rgb(180, 180, 180);
-  border-radius: 5%;
+  border: solid rgb(200, 200, 200);
+  border-width: 0.5rem;
+  border-radius: 1.5rem;
   overflow: hidden;
 }
 
