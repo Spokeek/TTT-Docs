@@ -9,7 +9,6 @@ SimpleDecal を使えばUVの理解をしなくても直感的にテクスチャ
 
 ## チュートリアル
 
-
 はじめに、新規ゲームオブジェクトを生成し AddComponent から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
 
 ![AddComponent](img/sd-AddComponent.png)
@@ -34,7 +33,6 @@ SimpleDecal を使えばUVの理解をしなくても直感的にテクスチャ
 ![Preview](img/sd-Preview.png)
 
 最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入って入れれば、アバターアップロード時に自動でデカールが適応されるので、アバター配下に移動するのをお忘れなく。
-
 
 ## グラデーションを入れるチュートリアル
 
@@ -75,4 +73,5 @@ SimpleDecal はただデカールができる...ただ"テクスチャを直感�
 色合成と入れる色を調整すれば、いろいろな色のグラデーションを簡単に、そして非破壊で入れることができるでしょう！
 
 ## クレジット
+
 - あまとうさぎ/Milk Re : https://booth.pm/ja/items/2953391

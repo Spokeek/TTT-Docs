@@ -8,6 +8,15 @@ sidebar_position: 1
 このチュートリアルは次期バージョンである v0.5.x 向けに作られており、現行最新版の v0.4.x 向けではなく、情報が違う可能性があります。
 :::
 
+## インストール
+
+VRChat Creator Companion からのインストールを推奨しており、[こちらから](vcc://vpm/addRepo?url=https%3A%2F%2Fvpm.rs64.net%2Fvpm.json) VRChat Creator Companion に追加できます。
+
+そして、TexTransTool は [NDMF](https://github.com/bdunderscore/ndmf) に対応しており、VRChat-Avatarの用途では必須なため同時にインストールすることを強く推奨しています。  
+ただ、[ModularAvatar](https://modular-avatar.nadena.dev/ja/) や [AvatarOptimaizer](https://vpm.anatawa12.com/avatar-optimizer/ja/) がすでにインストールされている場合は前提パッケージとしてインストールされているので問題ありません。
+
+## 使い方
+
 ```mdx-code-block
 
 import {TutorialCardElement} from '@site/src/components/TutorialCard';
@@ -15,3 +24,19 @@ import {TutorialCardElement} from '@site/src/components/TutorialCard';
 <TutorialCardElement />
 
 ```
+
+## アップロードの時の注意点
+
+TexTransTool は __非破壊テクスチャ改変ツール__ で、アップロード時にそれらコンポーネントの適用を行うので、__プレビュー状態でアップロードを行ってもプレビューは中断されてアップロードされます__。
+
+次に、アップロード時に適用される条件は
+
+- アバター配下に存在すること
+- Active状態であること
+- タグがEditorOnlyではないこと
+
+の三つで、すべてEditorOnlyではないならこの画像のようになり  
+![IaA-Hierarchy](img/IaA-Hierarchy.png)  
+丸の物だけアップロード時に適用されるのでご注意ください。
+
+最後に、VRChatSDK での Avatar のアップロードの時に NDMF がプロジェクトに存在しない場合は適用されないのでご注意ください。
