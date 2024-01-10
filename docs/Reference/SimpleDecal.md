@@ -10,6 +10,12 @@ sidebar_position: 3
 テクスチャを平行に投影したかのように見えるテクスチャを生成し色合成をしながらテクスチャ改変を行う  
 [AtlasTexture](./AtlasTexture.md)の為に作られた UVtoUV の技術を転用して作られたコンポーネント。
 
+## デカールが張られる基準
+
+- 適切なレンダラーが一つ以上指定されていること [詳細](#レンダラー設定)
+- ギズモの範囲にポリゴンが存在すること [詳細](#カリング設定)
+- 対象となるレンダラーが持つマテリアルに [ターゲットプロパティネーム](#ターゲットプロパティネーム)で指定されるテクスチャーが存在すること
+
 ## 設定項目
 
 ### レンダラー設定
@@ -24,6 +30,8 @@ sidebar_position: 3
 基本的にマルチレンダラーモードはそれらに対して foreach しているだけのもので、適用したい対象が複数のレンダラーに分かれている場合に使用することを想定しています。
 
 ### テクスチャー設定
+
+![TextureSetting](img/sd-TextureSetting.png)
 
 #### デカールテクスチャー
 
@@ -41,9 +49,9 @@ sidebar_position: 3
 
 デカールを張るテクスチャの選択。 [詳細](Common/TargetPropertyName.md)
 
-![TextureSetting](img/sd-TextureSetting.png)
-
 ### スケール設定
+
+![ScaleSetting-AspectFixed](img/sd-ScaleSetting-AspectFixed.png)
 
 #### スケール
 
@@ -53,15 +61,16 @@ sidebar_position: 3
 
 有効だと画像のアスペクト比に応じて 縦幅 の値を自動設定します。
 
+アスペクト非固定無効化したUI  
+![ScaleSetting-NonAspectFixed](img/sd-ScaleSetting-NonAspectFixed.png)
+
 #### 最大距離
 
 ローカルスケールの Z の値で、デカールが張られる大体の奥行きと対応しています。
 
-![ScaleSetting-AspectFixed](img/sd-ScaleSetting-AspectFixed.png)  
-アスペクト非固定無効化  
-![ScaleSetting-NonAspectFixed](img/sd-ScaleSetting-NonAspectFixed.png)  
-
 ### カリング設定
+
+![CullingSetting](img/sd-CullingSetting.png)
 
 #### ポリゴンカリング
 
@@ -76,9 +85,9 @@ sidebar_position: 3
 スケールの一部がマイナスになっているとデカールする方向から見て表面に張られなくなることがあります。
 :::
 
-![CullingSetting](img/sd-CullingSetting.png)
-
 ### 詳細設定
+
+![AdvansdSetting](img/sd-AdvansdSetting.png)
 
 #### 高品質なパディング
 
@@ -88,8 +97,6 @@ sidebar_position: 3
 #### パディング
 
 MipMapでにじまないようにするためのパディングの幅です。
-
-![AdvansdSetting](img/sd-AdvansdSetting.png)
 
 ### 実験的機能
 
@@ -126,6 +133,6 @@ UV上でつながるまとまりごとにデカールをマスクするように
 前者の場合lilToonであれば 影色1のテクスチャー "_ShadowColorTex" などが存在し、それらに "_MainTex" とは違うテクスチャーが入っているようなマテリアルで発生し、それにもデカールを適用することで解決できます。
 
 具体的にはデカールを複製し、[ターゲットプロパティネーム](./Common/TargetPropertyName.md)で該当するテクスチャーのプロパティを選択すること。
-![Q&A-ShadowDecal](img/ad-Q&A-ShadowDecal.png)
+![Q&A-ShadowDecal](img/sd-Q&A-ShadowDecal.png)
 
 後者のエミッションの場合でも、エミッション用のプロパティを選択することで解決できます。
