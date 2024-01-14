@@ -57,12 +57,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/ReinaFeatherIcon.png',
+      image: 'img/TTT_icon.png',
       navbar: {
         title: 'TexTransTool',
         logo: {
           alt: 'TTT Logo',
-          src: 'img/ReinaFeatherIcon.png',
+          src: 'img/TTT_icon.png',
         },
         items: [
           {
