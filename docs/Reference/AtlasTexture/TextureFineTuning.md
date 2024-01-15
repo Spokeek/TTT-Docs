@@ -43,10 +43,10 @@ AtlasTexture の生成したテクスチャーにかかる圧縮を明示的に�
 
 Texture2Dのインポート設定と似たような感じですが、少し差異があるためご注意ください。
 
-- Nome RGBA32
-- Low StandaloneWin-DXT1 Android-ASTC_8x8
-- Normal StandaloneWin-DXT5 Android-ASTC_6x6
-- High StandaloneWin-BC7 Android-ASTC_4x4
+- Nome | RGBA32
+- Low | StandaloneWin-DXT1 Android-ASTC_8x8
+- Normal | StandaloneWin-DXT5 Android-ASTC_6x6
+- High | StandaloneWin-BC7 Android-ASTC_4x4
 
 ### フォーマットをオーバーライドする
 
@@ -96,4 +96,4 @@ AtlasTexture が生成したテクスチャを プロパティ間でコピーす
 
 ### リニア
 
-この項目が有効の場合対象となるテクスチャはリニアなテクスチャーにされる設定
+この項目が有効の場合対象となるテクスチャはリニアテクスチャーにされます
