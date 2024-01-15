@@ -8,7 +8,7 @@ sidebar_position: 3
 ## 概要
 
 テクスチャを平行に投影したかのように見えるテクスチャを生成し色合成をしながらテクスチャ改変を行う  
-[AtlasTexture](./AtlasTexture.md)の為に作られた UVtoUV の技術を転用して作られたコンポーネント。
+[AtlasTexture](./AtlasTexture)の為に作られた UVtoUV の技術を転用して作られたコンポーネント。
 
 ## デカールが張られる基準
 
