@@ -35,13 +35,13 @@ sidebar_position: 2
 
 ### ターゲットルート
 
-![TargetRoot](img/at-TargetRoot.png)
+![TargetRoot](../img/at-TargetRoot.png)
 
 アトラス化されるレンダラーの最大範囲の指定となり、ここに指定した GameObject の子として存在するレンダラーがアトラス化の対象となる可能性があります。
 
 ### マテリアルセレクター
 
-![MaterialSelector](img/at-MaterialSelector.png)
+![MaterialSelector](../img/at-MaterialSelector.png)
 
 左から、アトラス化の対象の選択  
 選択されていたら、倍率でそのマテリアルの持つテクスチャーの大きさを調整できる値  
@@ -51,7 +51,7 @@ sidebar_position: 2
 
 ### アトラス化設定
 
-![AtlasSetting](img/at-AtlasSetting.png)
+![AtlasSetting](../img/at-AtlasSetting.png)
 
 #### アトラステクスチャーサイズ
 
@@ -62,7 +62,7 @@ sidebar_position: 2
 アトラス化を適用するときにマテリアルを強制的に結合する機能
 
 有効な時に、追加の項目が表示されます。  
-![AtlasMargeMaterialSetting](img/at-AtlasMargeMaterialSetting.png)
+![AtlasMargeMaterialSetting](../img/at-AtlasMargeMaterialSetting.png)
 
 ##### プロパティベイク設定
 
@@ -86,13 +86,7 @@ sidebar_position: 2
 
 #### パディング
 
-アトラス化するときに、[アイランド](Common/Island.md)同士の感覚を広げる設定
-
-#### アイランドのキャッシング
-
-UVから[アイランド](Common/Island.md)を計算する処理をキャッシュを使い高速化する機能
-
-デバッグでもない限り有効化推奨。
+アトラス化するときに、[アイランド](../Common/Island.md)同士の感覚を広げる設定
 
 #### アイランドソーターネーム
 
@@ -110,8 +104,8 @@ UV1 にアトラス化する前の UV に書き込む機能
 
 #### アップスケーリングを許可
 
-[アイランド](Common/Island.md)の再配置を行う際に、アイランドの拡大を行うことを許可するかどうかの設定
+[アイランド](../Common/Island.md)の再配置を行う際に、アイランドの拡大を行うことを許可するかどうかの設定
 
 #### テクスチャー詳細設定
 
-制作中です...
+テクスチャの詳細な設定を行うための項目です。 [詳細](./TextureFineTuning.md)
