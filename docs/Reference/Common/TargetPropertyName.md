@@ -24,4 +24,3 @@ Unityのドキュメントであればこのあたりの物を指しています
 
 ![UseCustomPropertyName](../img/TargetPropertyName-UseCustomPropertyName.png)  
 この項目を有効化すると上記二つの項目が無効化され、任意の文字で指定することが可能になります
-
