@@ -19,7 +19,7 @@ UVに強い依存を持ち、UVの変更がなされた後だと動作できな�
 例
 
 - [MultiLayerImageCanvas](../MultiLayerImageCanvas)
-- TextureBlender
+- [TextureBlender](../TextureBlender)
 
 ### UVModification | UV変更
 
