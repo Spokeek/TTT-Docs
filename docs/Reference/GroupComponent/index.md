@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## 概要
 
-TexTransTool のコンポーネントの[実行順序](../General/ExecutionOrder)を保証したりするための存在です。
+TexTransTool のコンポーネントの[実行順序](/docs/Reference/General/ExecutionOrder)を保証したりするための存在です。
 
 ## 保証する範囲
 
