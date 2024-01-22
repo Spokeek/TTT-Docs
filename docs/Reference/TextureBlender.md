@@ -8,7 +8,7 @@ sidebar_position: 7
 TextureBlender は実験的なコンポーネントです！予告なく機能変更や削除がされる可能性があります。
 :::
 :::info
-[MultiLayerImageCanvas](./MultiLayerImageCanvas)の下位互換でしかなく、どういった扱いにすべきかが定まっていないため実験的な扱になっています。
+現状[MultiLayerImageCanvas](./MultiLayerImageCanvas)の下位互換で、扱いが定まっていないため実験的な扱いです。
 :::
 
 ## 概要
