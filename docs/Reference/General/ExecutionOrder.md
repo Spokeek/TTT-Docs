@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # 実行順序
 
-[SimpleDecal](/docs/Reference/SimpleDecal.md)だけであっても、どの順番で実行されるかによって最終結果が変わってしまうようなものを扱っているのが TexTransTool で、実行順は非常に重要な意味を持ちます。
+[SimpleDecal](/docs/Reference/SimpleDecal)だけであっても、どの順番で実行されるかによって最終結果が変わってしまうようなものを扱っているのが TexTransTool で、実行順は非常に重要な意味を持ちます。
 
 ## フェーズ
 
@@ -35,7 +35,7 @@ UVに依存がなく、UVが書き換えられたことによる恩恵を受け�
 
 例
 
-- [SimpleDecal](/docs/Reference/SimpleDecal.md)
+- [SimpleDecal](/docs/Reference/SimpleDecal)
 - CylindricalDecal
 - NailEditor
 
