@@ -4,7 +4,6 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    //TODO : このあたりもうちょっと違う画像とかにしてもよいかも...?
     title: 'AtlasTexture',
     img: require('@site/static/img/TutorialCard/AtlasTexture-TutorialHeader.png').default,
     description: (

@@ -12,9 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
+          <img src={require("@site/static/img/TTT_logo.png").default} alt={siteConfig.title} width="50%" />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link sl
@@ -22,7 +20,7 @@ function HomepageHeader() {
             href="vcc://vpm/addRepo?url=https%3A%2F%2Fvpm.rs64.net%2Fvpm.json">
             Download-VPM
           </Link>
-          
+
           <Link
             className={`button button--secondary button--lg ${styles.button}`}
             to="/docs/Tutorial/">
