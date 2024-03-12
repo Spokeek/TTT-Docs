@@ -47,7 +47,7 @@
 - Subtract-減算
 - Divide-除算
 
-HSV系
+視覚的な色調置き換え系
 
 - Hue-色相
 - Saturation-彩度
