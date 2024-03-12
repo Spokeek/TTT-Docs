@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# AtlasTexture
+# AtlasTextureのチュートリアル
 
 AtlasTexture を使えばBlenderに持って行ってUVを再配置して、それに合ったテクスチャを生成して、それらをUnityに再度インポートして...などという超めんどくさいことをしなくても、テクスチャの無駄を切り詰めてVRAM削減を行うことができ、そのうえ非破壊で行うことができます！
 

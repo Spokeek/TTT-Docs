@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# SimpleDecal
+# SimpleDecalのチュートリアル
 
 SimpleDecal を使えばUVの理解をしなくても直感的にテクスチャに柄や模様、それに加えて髪の毛のメッシュなどを行うことができ
 それらを、非破壊的に行うことができます！
