@@ -4,12 +4,16 @@ sidebar_position: 1
 
 # チュートリアル
 
+## これはなに？
+
+TexTransTool は [高レベルのアトラス化](/docs/Tutorial/AtlasTexture-Tutorial.md)や[直感的な色改変](/docs/Tutorial/SimpleDecal-Tutorial.md)が行えるツールです！
+
 ## インストール
 
-VRChat Creator Companion からのインストールを推奨しており、[こちらから](vcc://vpm/addRepo?url=https%3A%2F%2Fvpm.rs64.net%2Fvpm.json) VRChat Creator Companion に追加できます。
+VRChat Creator Companion からのインストールを推奨しています。  [パッケージ追加リンク](vcc://vpm/addRepo?url=https%3A%2F%2Fvpm.rs64.net%2Fvpm.json)
 
-そして、TexTransTool は [NDMF](https://github.com/bdunderscore/ndmf) に対応しており、VRChat-Avatarの用途では必須なため同時にインストールすることを強く推奨しています。  
-ただ、[ModularAvatar](https://modular-avatar.nadena.dev/ja/) や [AvatarOptimaizer](https://vpm.anatawa12.com/avatar-optimizer/ja/) がすでにインストールされている場合は前提パッケージとしてインストールされているので問題ありません。
+TexTransTool はアバター改変用途では [NDMF](https://github.com/bdunderscore/ndmf) が必須です、同時にインストールすることを強く推奨します！  
+[ModularAvatar](https://modular-avatar.nadena.dev/ja/) や [AvatarOptimaizer](https://vpm.anatawa12.com/avatar-optimizer/ja/) が既に導入されている場合は問題ありません。
 
 ## 使い方
 
@@ -23,16 +27,16 @@ import {TutorialCardElement} from '@site/src/components/TutorialCard';
 
 ## アップロードの時の注意点
 
-TexTransTool は __非破壊テクスチャ改変ツール__ で、アップロード時にそれらコンポーネントの適用を行うので、__プレビュー状態でアップロードを行ってもプレビューは中断されてアップロードされます__。
+TexTransTool は __非破壊テクスチャ改変ツール__ で、アップロード時にそれらコンポーネントの適用を行うので、__プレビュー状態でアップロードを行ってもアップロードが中断されます__。
 
 次に、アップロード時に適用される条件は
 
-- アバター配下に存在すること
+- アバター配下に存在すること (AvatarDiscriptorのついたゲームオブジェクトとその配下であること)
 - Active状態であること
 - タグがEditorOnlyではないこと
 
 の三つで、すべてEditorOnlyではないならこの画像のようになり  
 ![IaA-Hierarchy](img/IaA-Hierarchy.png)  
-丸の物だけアップロード時に適用されるのでご注意ください。
+緑色の丸が付いている物だけアップロード時に適用されるのでご注意ください。
 
-最後に、VRChatSDK での Avatar のアップロードの時に [NDMF](https://github.com/bdunderscore/ndmf) がプロジェクトに存在しない場合は適用されないのでご注意ください。
+最後に、アバターアップロードの時に [NDMF](https://github.com/bdunderscore/ndmf) がプロジェクトに存在しない場合は適用されないのでご注意ください。
