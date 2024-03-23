@@ -7,7 +7,7 @@ sidebar_position: 4
 
 ## 概要
 
-テクスチャを平行に投影したかのように見えるテクスチャを生成し色合成をしながらテクスチャ改変を行う  
+テクスチャを平行に投影したかのように見えるテクスチャを生成し、元のテクスチャと合成することでテクスチャ改変を行う  
 [AtlasTexture](/docs/Reference/AtlasTexture)の為に作られた UVtoUV の技術を転用して作られたコンポーネント。
 
 ## デカールが張られる基準
@@ -20,14 +20,14 @@ sidebar_position: 4
 
 ### レンダラー設定
 
-基本的に対象とるレンダラー (SkindMeshRenderer or MeshRenderer) を入れる項目。
+対象とするレンダラー (SkindMeshRenderer or MeshRenderer) を入れる項目。
 
 シングルレンダラーモード  
 ![SingleRendererMode](../img/sd-SingleRendererMode.png)  
 マルチレンダラーモード  
 ![MultiRendererMode](../img/sd-MultiRendererMode.png)  
 
-基本的にマルチレンダラーモードはそれらに対して foreach しているだけのもので、適用したい対象が複数のレンダラーに分かれている場合に使用することを想定しています。
+デカールを張りたい対象が複数のレンダラーにまたがっているときに使用します。
 
 ### テクスチャー設定
 
@@ -39,11 +39,13 @@ sidebar_position: 4
 
 #### カラー
 
-貼り付けるとき、デカールテクスチャーに対して乗算して、貼り付けるときに色を変えることができる。
+デカールテクスチャーに乗算し、貼り付けるデカールの色をその場で変更する設定
+
+ただし、デカールテクスチャーが存在しない場合は、カラーの色がそのままデカールテクスチャーになります。
 
 #### ブレンドタイプキー
 
-デカールを元のテクスチャと合成するときの色合成を指定できるキー。[詳細](/docs/Reference/Common/BlendTypeKey)
+デカールを元のテクスチャと合成するときの色合成を指定できる設定。[詳細](/docs/Reference/Common/BlendTypeKey)
 
 #### ターゲットプロパティネーム
 
