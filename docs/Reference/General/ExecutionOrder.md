@@ -43,7 +43,7 @@ UVに依存がなく、UVが書き換えられたことによる影響がない�
 
 属するコンポーネント
 
-- MaterialOverrideTransfer
+- [MaterialOverrideTransfer](/docs/Reference/MaterialOverrideTransfer)
 
 ### Optimizing | 最適化
 
@@ -52,7 +52,7 @@ UVに依存がなく、UVが書き換えられたことによる影響がない�
 属するコンポーネント
 
 - [AtlasTexture](/docs/Reference/AtlasTexture)
-- TextureConfigurator
+- [TextureConfigurator](/docs/Reference/TextureConfigurator)
 
 ## フェーズ内での実行順
 
