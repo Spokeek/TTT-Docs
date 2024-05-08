@@ -14,6 +14,10 @@ AtlasShaderSupport は実験的な機能です！予告なく機能変更や削�
 
 任意のシェーダーで、足りない機能などがあれば Issues などにご連絡ください。
 
+## 生成方法
+
+`Assets/Create/TexTransTool/AtlasShaderSupportScriptableObject` から生成できます。
+
 ## 設定項目
 
 ### SupportedShaderComparer
