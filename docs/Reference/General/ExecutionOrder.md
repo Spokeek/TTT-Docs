@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # 実行順序
@@ -16,9 +16,9 @@ TexTransPhase と表記されることもあり、下記五つによって構成
 
 ### BeforeUVModification | UV変更前
 
-UVに強い依存を持ち、UVの変更がなされた後だと動作できないコンポーネントが属するフェーズ
+UVに強い依存を持ち、UVの変更がなされた後では動作できないコンポーネントが属するフェーズ
 
-例
+属するコンポーネント
 
 - [MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas)
 - [TextureBlender](/docs/Reference/TextureBlender)
@@ -31,31 +31,28 @@ UVを書き換えるようなコンポーネントが属すフェーズ
 
 ### AfterUVModification | UV変更後
 
-UVに依存がなく、UVが書き換えられたことによる影響を受けるコンポーネントが属するフェーズ
+UVに依存がなく、UVが書き換えられたことによる影響がない、または受けれるコンポーネントが属するフェーズ。
 
-例
+属するコンポーネント
 
 - [SimpleDecal](/docs/Reference/SimpleDecal)
-- CylindricalDecal
-- NailEditor
 
 ### UnDefined | 未定義
 
 どのフェーズに属するべきかがケースバイケースであり、ユーザーが必要に応じて定義すべきなコンポーネントが属するフェーズ
 
-例
+属するコンポーネント
 
-- MaterialModifier
-- MatAndTexAbsoluteSeparator
-- MatAndTexRelativeSeparator
+- MaterialOverrideTransfer
 
 ### Optimizing | 最適化
 
 最適化を行う、早い段階で動く必要のないコンポーネントが属するフェーズ
 
-例
+属するコンポーネント
 
 - [AtlasTexture](/docs/Reference/AtlasTexture)
+- TextureConfigurator
 
 ## フェーズ内での実行順
 
