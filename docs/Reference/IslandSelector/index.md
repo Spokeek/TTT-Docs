@@ -50,7 +50,7 @@ IslandSelector は実験的なコンポーネント群です！予告なく機�
 
 ## 論理演算子
 
-論理演算子系コンポーネントは、原則 子の GameObject を上から順に読み取り、演算を適用します。
+論理演算子系コンポーネントは、子 GameObject の IslandSelector を上から順に読み取り、演算を適用します。
 
 ### IslandSelectorAND
 
