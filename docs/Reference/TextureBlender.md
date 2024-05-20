@@ -28,4 +28,4 @@ TextureBlender は実験的なコンポーネントです！予告なく機能�
 
 ### BlendTypeKey
 
-対象の画像との合成モードの指定
+対象の画像との合成モードの指定、[詳細](/docs/Reference/Common/BlendTypeKey)
