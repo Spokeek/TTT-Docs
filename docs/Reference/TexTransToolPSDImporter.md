@@ -16,7 +16,7 @@ TexTransToolPSDImporter は実験的な機能です！予告なく機能変更�
 
 .psd のファイルを Unity にインポートし、インスペクターの上部のほうにある Importer の選択で、 `net.rs64.TexTransTool.MultiLayerImage.Importer.TexTransToolPSDImporter` を選択することで使用できます。
 
-## 対応
+## インポート可能なレイヤー
 
 現在これらのレイヤーがインポート可能です。
 
@@ -26,3 +26,5 @@ TexTransToolPSDImporter は実験的な機能です！予告なく機能変更�
 - [色調・彩度・明度 調整レイヤー](/docs/Reference/MultiLayerImageCanvas/HSVAdjustmentLayer)
 - [レベル調整レイヤー](/docs/Reference/MultiLayerImageCanvas/LevelAdjustmentLayer)
 - [選択的色域調整レイヤー](/docs/Reference/MultiLayerImageCanvas/SelectiveColoringAdjustmentLayer)
+
+エクスポートするアプリケーションで互換性を保持する設定などが有効な場合、これら以外のレイヤーがラスターレイヤーとしてインポートできることがあります。
