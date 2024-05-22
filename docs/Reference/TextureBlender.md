@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # TextureBlender
@@ -14,4 +14,18 @@ TextureBlender は実験的なコンポーネントです！予告なく機能�
 
 ## 設定項目
 
-制作中です...
+### TextureSelector
+
+対象の選択、[詳細](/docs/Reference/Common/TextureSelector)
+
+### BlendTexture
+
+重ねる画像を設定する項目
+
+### Color
+
+画像に乗算で色を調整できる項目
+
+### BlendTypeKey
+
+対象の画像との合成モードの指定、[詳細](/docs/Reference/Common/BlendTypeKey)
