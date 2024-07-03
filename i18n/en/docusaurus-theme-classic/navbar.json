@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "TexTransTool",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "TTT icon",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.ドキュメント": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label ドキュメント"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

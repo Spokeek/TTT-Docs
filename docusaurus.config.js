@@ -30,8 +30,16 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'jp',
-    locales: ['jp'],
+    defaultLocale: 'ja',
+    locales: ['ja', "en"],
+    localeConfigs: {
+      ja: {
+        htmlLang: 'ja',
+      },
+      en: {
+        htmlLang: 'en-US',
+      },
+    },
   },
 
   presets: [
@@ -70,6 +78,10 @@ const config = {
             sidebarId: 'documentSidebar',
             position: 'left',
             label: 'ドキュメント',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/ReinaS-64892/TexTransTool',

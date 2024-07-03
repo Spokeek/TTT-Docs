@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.documentSidebar.category.チュートリアル": {
+    "message": "チュートリアル",
+    "description": "The label for category チュートリアル in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.詳細情報": {
+    "message": "詳細情報",
+    "description": "The label for category 詳細情報 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.概念": {
+    "message": "概念",
+    "description": "The label for category 概念 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.共通項目": {
+    "message": "共通項目",
+    "description": "The label for category 共通項目 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.AtlasTexture": {
+    "message": "AtlasTexture",
+    "description": "The label for category AtlasTexture in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.PreviewUtility": {
+    "message": "PreviewUtility",
+    "description": "The label for category PreviewUtility in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.GroupComponent": {
+    "message": "GroupComponent",
+    "description": "The label for category GroupComponent in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.MultiLayerImageCanvas": {
+    "message": "MultiLayerImageCanvas",
+    "description": "The label for category MultiLayerImageCanvas in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.依存したアセットなどに関して": {
+    "message": "依存したアセットなどに関して",
+    "description": "The label for category 依存したアセットなどに関して in sidebar documentSidebar"
+  }
+}
