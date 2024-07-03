@@ -49,7 +49,7 @@ sidebar_position: 4
 
 #### ターゲットプロパティネーム
 
-デカールを張るテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName.md)
+デカールを張るテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName)
 
 ### スケール設定
 
@@ -125,7 +125,7 @@ MipMapでにじまないようにするためのパディングの幅です。
 デフォルト設定ではSimpleDecalは "_MainTex" にデカールを適用します。  
 前者の場合lilToonであれば 影色1のテクスチャー "_ShadowColorTex" などが存在し、それらに "_MainTex" とは違うテクスチャーが入っているようなマテリアルで発生し、それにもデカールを適用することで解決できます。
 
-具体的にはデカールを複製し、[ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName.md)で該当するテクスチャーのプロパティを選択すること。
+具体的にはデカールを複製し、[ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName)で該当するテクスチャーのプロパティを選択すること。
 ![Q&A-ShadowDecal](../img/sd-Q&A-ShadowDecal.png)
 
 後者のエミッションの場合でも、エミッション用のプロパティを選択することで解決できますが、該当となるプロパティにテクスチャーが割り当てられていない場合適用されないのでご注意ください。

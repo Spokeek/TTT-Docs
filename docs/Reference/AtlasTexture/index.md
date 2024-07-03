@@ -58,7 +58,7 @@ sidebar_position: 3
 
 #### パディング
 
-アイランドを再配置するときに、[アイランド](/docs/Reference/Common/Island.md)同士の間隔を調整する設定
+アイランドを再配置するときに、[アイランド](/docs/Reference/Common/Island)同士の間隔を調整する設定
 
 #### 適用時に非アクティブなレンダラーを含める
 
@@ -105,7 +105,7 @@ sidebar_position: 3
 
 #### アイランド詳細調整
 
-上記:マテリアルによる 大きさ優先度 の調整が行われた後に、[アイランド](../Common/Island.md)単位で優先度の調整が行える機能。
+上記:マテリアルによる 大きさ優先度 の調整が行われた後に、[アイランド](/docs/Reference/Common/Island)単位で優先度の調整が行える機能。
 
 アイランドの選択の詳細は[こちら](/docs/Reference/IslandSelector)
 

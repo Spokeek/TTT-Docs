@@ -1,6 +1,6 @@
 # TextureSelector
 
-[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) や [TextureBlender](/docs/Reference/TextureBlender.md) で対象とするテクスチャーを指定するための物です。
+[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) や [TextureBlender](/docs/Reference/TextureBlender) で対象とするテクスチャーを指定するための物です。
 
 ## 設定項目
 

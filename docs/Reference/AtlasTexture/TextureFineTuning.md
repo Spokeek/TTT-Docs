@@ -17,7 +17,7 @@ AtlasTexture の生成したテクスチャーをそのまま使うのはかえ�
 
 それら設定を行うテクスチャを選ぶためのプロパティの指定
 
-TextureFineTuning だけの特別な設定ですが、 [ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName.md)のカスタムプロパティを使用すれば、スペース区切りで複数のプロパティを指定することができます。
+TextureFineTuning だけの特別な設定ですが、 [ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName)のカスタムプロパティを使用すれば、スペース区切りで複数のプロパティを指定することができます。
 
 ### 選択
 
