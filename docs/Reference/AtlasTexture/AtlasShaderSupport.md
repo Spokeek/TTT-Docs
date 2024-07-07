@@ -24,6 +24,9 @@ AtlasShaderSupport は実験的な機能です！予告なく機能変更や削�
 
 - ContainsName : シェーダ名の部分一致
 - ShaderReference : シェーダー参照一致
+- NotComparer : 一つ指定し一致判定の反転
+- AndComparer : 複数の Comparer を指定し AND 演算
+- OrComparer : 複数の Comparer を指定し OR 演算
 
 ### Priority
 
@@ -39,18 +42,18 @@ lilToon の AtlasShaderSupport を何かしらの都合で上書きしたい場�
 
 この定義が差すテクスチャーのプロパティ名
 
-#### Comparar
+#### AtlasDefineConstraints
 
 定義がマテリアル設定に応じて、存在するかどうかを判定する設定
 
-- AndConstraints : 複数の Comparar を And演算 で判定
-- OrConstraints : 複数の Comparar を Or演算 で判定
+- AndConstraints : 複数の Constraints を And演算 で判定
+- OrConstraints : 複数の Constraints を Or演算 で判定
 - FloatPropertyValueGreater : Float のプロパティの値が指定値以上(以下)かで判定
 - FloatPropertyValueEqual : Float のプロパティの値が指定値(以外)かで判定
 - IntPropertyValueGreater : Int のプロパティの値が指定値以上(以下)かで判定
 - IntPropertyValueEqual : Int のプロパティの値が指定値(以外)かで判定
 - ShaderNameContains : シェーダー名の部分一致かで判定
-- Anythin : 常に有効な判定
+- Anything : 常に有効な判定
 
 #### BakePropertyNames
 
