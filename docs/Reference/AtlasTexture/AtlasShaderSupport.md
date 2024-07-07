@@ -70,7 +70,7 @@ lilToon の AtlasShaderSupport を何かしらの都合で上書きしたい場�
 ベイクが行われるとき、`_MainTex` であれば、 `Bake_MainTex` のように、 プロパティ名の前に `Bake` とついた シェーダーキーワードが設定され、その時
 
 - その定義のテクスチャー 例えば `_MainTex` と、[BakePropertyNames](#bakepropertynames) に指定したプロパティが設定されます。
-- そのテクスチャーが [Comparar](#comparar) により無効だった場合 シェーダーキーワード `Constraint_Invalid` が設定されます。
+- そのテクスチャーが [AtlasDefineConstraints](#atlasdefineconstraints) により無効だった場合 シェーダーキーワード `Constraint_Invalid` が設定されます。
 
 詳しい実装は [lilToonAtlasBaker.shader](https://github.com/ReinaS-64892/TexTransTool/blob/724edfa6a8f5df5b6be99c535e001de884f108b2/Runtime/TextureAtlas/AtlasShaderSupport/liltoon/lilToonAtlasBaker.shader) を参考にしてください。
 
