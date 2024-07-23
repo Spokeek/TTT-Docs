@@ -5,7 +5,7 @@ sidebar_position: 5
 # HSLAdjustmentLayer
 
 :::warning
-HSVAdjustmentLayer は実験的なコンポーネントです！予告なく機能変更や削除がされる可能性があります。
+HSLAdjustmentLayer は実験的なコンポーネントです！予告なく機能変更や削除がされる可能性があります。
 :::
 
 ## 概要
