@@ -16,10 +16,10 @@ sidebar_position: 3
 
 - 適用時にアクティブであること、ただし [適用時に非アクティブなレンダラーを含める](#適用時に非アクティブなレンダラーを含める)が有効な場合は非アクティブでも対象となる
 - tag が EditorOnly ではないこと
-- Rendarar の持つ Mesh が存在すること
-- Rendarar の持つ Mesh の UV0 が存在すること
-- Rendarar の持つマテリアルが一つ以上存在すること
-- Rendarar の持つマテリアルに Null が含まれていないこと
+- Renderer の持つ Mesh が存在すること
+- Renderer の持つ Mesh の UV0 が存在すること
+- Renderer の持つマテリアルが一つ以上存在すること
+- Renderer の持つマテリアルに Null が含まれていないこと
 
 ### マテリアルが持つテクスチャー
 
