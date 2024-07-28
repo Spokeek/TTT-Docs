@@ -18,7 +18,7 @@ AtlasTextureを使えば、めんどくさいVRAM使用量削減を __非破壊�
 デフォルトの衣装が一部使われていて、デフォルト衣装のテクスチャに無駄が生じているケースでアトラス化を使ってみましょう！  
 ![MilkRe](img/at-MilkRe.png)
 
-新しくゲームオブジェクトを生成して AddComponent から TexTransTool/TTT AtlasTexture で追加することで使用することができます。  
+新しくゲームオブジェクトを生成して Add Component から TexTransTool/TTT AtlasTexture で追加することで使用することができます。  
 ![AddComponent](img/at-AddComponent.png)
 
 まず最初に、アトラス化をしたいテクスチャを持ったレンダラー(メッシュ)の範囲を指定しましょう  
@@ -55,7 +55,7 @@ Quest対応をするときに必要になるマテリアル数の削減やVRAM�
 まず前提として上記のチュートリアルは完全に理解している前提で始めます。
 
 Quest対応の時ケースで、できるだけ数を減らすなら...すべてのマテリアルとテクスチャをアトラス化対象に入れましょう！  
-![QestAllMaterialSelect](img/at-QestAllMaterialSelect.png)
+![QuestAllMaterialSelect](img/at-QuestAllMaterialSelect.png)
 
 つぎに
 
@@ -65,11 +65,11 @@ Quest対応の時ケースで、できるだけ数を減らすなら...すべて
 - テクスチャーを強制的にセットするにチェックを入れる
 
 をすれば設定は完了です！  
-![QestAtlasSettings](img/at-QestAtlasSettings.png)  
-プレビューをしてみるとQuest用のマテリアルに置き換えられ、テクスチャとマテリアルも一つになっていることを確認できます！
+![QuestAtlasSettings](img/at-QuestAtlasSettings.png)  
+プレビューをしてみるとQuest用のマテリアルに置き換えられ、テクスチャとマテリアルも1つになっていることを確認できます！
 
 最後に注意点！  AtlasTexture のマテリアルの結合は __マテリアルをまとめるだけ__ で、__マテリアルスロットの結合はできません__。  
-メッシュをマージしながらマテリアルスロットも削減できる[Anatawa12/AvatarOptimaizer](https://github.com/anatawa12/AvatarOptimizer)の[MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/)との併用を強く推奨します。
+メッシュをマージしながらマテリアルスロットも削減できる[Anatawa12/AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer)の[MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/)との併用を強く推奨します。
 
 ## クレジット
 

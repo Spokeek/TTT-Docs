@@ -12,7 +12,7 @@ sidebar_position: 4
 
 ## デカールが張られる基準
 
-- 適切なレンダラーが一つ以上指定されていること [詳細](#レンダラー設定)
+- 適切なレンダラーが1つ以上指定されていること [詳細](#レンダラー設定)
 - ギズモの範囲にポリゴンが存在すること [詳細](#カリング設定)
 - 対象となるレンダラーが持つマテリアルに [ターゲットプロパティネーム](#ターゲットプロパティネーム)で指定されるテクスチャーが存在すること
 
@@ -20,7 +20,7 @@ sidebar_position: 4
 
 ### レンダラー設定
 
-対象とするレンダラー (SkindMeshRenderer or MeshRenderer) を入れる項目。
+対象とするレンダラー (SkinnedMeshRenderer or MeshRenderer) を入れる項目。
 
 シングルレンダラーモード  
 ![SingleRendererMode](../img/sd-SingleRendererMode.png)  
@@ -57,7 +57,7 @@ sidebar_position: 4
 
 #### スケール
 
-ローカルスケール の X ( Y) の値で、デカールを張る 横幅(と縦幅)に対応しています。
+ローカルスケール の X (Y) の値で、デカールを張る 横幅(と縦幅)に対応しています。
 
 #### アスペクト比固定
 
@@ -78,7 +78,7 @@ sidebar_position: 4
 
 処理を軽くするために行うポリゴンのカリング。
 
-メッシュに対して非常に小さいデカールを仕様たい場合にのみ、外してください。
+メッシュに対して非常に小さいデカールを使用したい場合にのみ、外してください。
 
 #### サイドカリング
 
@@ -89,7 +89,7 @@ sidebar_position: 4
 
 ### 詳細設定
 
-![AdvansdSetting](../img/sd-AdvansdSetting.png)
+![AdvancedSetting](../img/sd-AdvancedSetting.png)
 
 #### 高品質なパディング
 

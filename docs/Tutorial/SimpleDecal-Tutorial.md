@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## チュートリアル
 
-はじめに、新規ゲームオブジェクトを生成し AddComponent から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
+はじめに、新規ゲームオブジェクトを生成し Add Component から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
 
 ![AddComponent](img/sd-AddComponent.png)
 
@@ -27,12 +27,12 @@ sidebar_position: 2
 ![ScaleSetting](img/sd-ScaleSetting.png)
 
 たとえば...ほっぺに模様を張るときだったらこんな感じ！
-![Position Example](img/sd-PotitionExample.png)
+![Position Example](img/sd-PositionExample.png)
 
 いい感じの場所にデカールが張られていたことが確認できたら、リアルタイムプレビューを終了しましょう！
 ![Preview](img/sd-Preview.png)
 
-最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入って入れれば、  
+最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入っていれば、  
 アバターアップロード時に自動でデカールが適応されるので、アバター配下に移動するのをお忘れなく。
 
 ## グラデーションを入れるチュートリアル
