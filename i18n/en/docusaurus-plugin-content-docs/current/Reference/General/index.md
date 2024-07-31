@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# 概念
+# Concept
 
-TexTransTool を使いこなすにあたって重要な概念に関しての詳細なリファレンスです。
+A detailed reference for important concept to how to use the TexTransTool effectively.

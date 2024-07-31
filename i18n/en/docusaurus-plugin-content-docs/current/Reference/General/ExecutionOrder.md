@@ -2,19 +2,19 @@
 sidebar_position: 1
 ---
 
-# 実行順序
+# ExecutionOrder
 
-TexTransTool のコンポーネントはどの順番で実行されるかによって最終結果が変化することがあります。
+The TexTransTool components is the execution order of can change the final result.
 
-特に[SimpleDecal](/docs/Reference/SimpleDecal)では実行順は特に大きな意味を持ちます。
+The execution order is big significant especially for [SimpleDecal](/docs/Reference/SimpleDecal).
 
-## フェーズ
+## Phase
 
 ほとんどのコンポーネントには 実行するフェーズが存在します。
 
 TexTransPhase と表記されることもあり、下記五つによって構成されていて、上から順に実行されます。
 
-### BeforeUVModification | UV変更前
+### BeforeUVModification
 
 UVに強い依存を持ち、UVの変更がなされた後では動作できないコンポーネントが属するフェーズ
 
@@ -23,13 +23,13 @@ UVに強い依存を持ち、UVの変更がなされた後では動作できな�
 - [MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas)
 - [TextureBlender](/docs/Reference/TextureBlender)
 
-### UVModification | UV変更
+### UVModification
 
 UVを書き換えるようなコンポーネントが属すフェーズ
 
 現在属するコンポーネントは存在しませんが今後追加される可能性があります。
 
-### AfterUVModification | UV変更後
+### AfterUVModification
 
 UVに依存がなく、UVが書き換えられたことによる影響がない、または受けれるコンポーネントが属するフェーズ。
 
@@ -37,7 +37,7 @@ UVに依存がなく、UVが書き換えられたことによる影響がない�
 
 - [SimpleDecal](/docs/Reference/SimpleDecal)
 
-### UnDefined | 未定義
+### UnDefined
 
 どのフェーズに属するべきかがケースバイケースであり、ユーザーが必要に応じて定義すべきなコンポーネントが属するフェーズ
 
@@ -45,7 +45,7 @@ UVに依存がなく、UVが書き換えられたことによる影響がない�
 
 - [MaterialOverrideTransfer](/docs/Reference/MaterialOverrideTransfer)
 
-### Optimizing | 最適化
+### Optimizing
 
 最適化を行う、早い段階で動く必要のないコンポーネントが属するフェーズ
 
@@ -54,7 +54,7 @@ UVに依存がなく、UVが書き換えられたことによる影響がない�
 - [AtlasTexture](/docs/Reference/AtlasTexture)
 - [TextureConfigurator](/docs/Reference/TextureConfigurator)
 
-## フェーズ内での実行順
+## Execution order with in a phase
 
 TexTransTool が アバターに対してビルドを行うとき、 上記の五つのフェーズを順番に実行します。
 

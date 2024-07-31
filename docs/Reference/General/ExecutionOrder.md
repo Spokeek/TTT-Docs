@@ -6,7 +6,7 @@ sidebar_position: 1
 
 TexTransTool のコンポーネントはどの順番で実行されるかによって最終結果が変化することがあります。
 
-特に[SimpleDecal](/docs/Reference/SimpleDecal)では実行順は特に大きな意味を持ちます。
+特に[SimpleDecal](/docs/Reference/SimpleDecal)では実行順は大きな意味を持ちます。
 
 ## フェーズ
 
