@@ -24,13 +24,13 @@ TextureConfigurator は実験的なコンポーネントです！予告なく機
 
 ### TextureSize
 
-設定するテクスチャの解像度を指定する項目、二のべき乗の値のみ入力可能です。
+設定するテクスチャの解像度を指定する項目、2のべき乗の値のみ入力可能です。
 
 ### MipMap
 
 MipMapを使用するか否かの設定です。
 
-### DownScalingAlgorism
+### DownScalingAlgorithm
 
 MipMapの生成やダウンスケーリングを行うときのアルゴリズムの指定。
 現在選択肢は存在しません。

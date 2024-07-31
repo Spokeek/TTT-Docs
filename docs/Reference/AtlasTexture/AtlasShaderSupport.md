@@ -74,7 +74,7 @@ lilToon の AtlasShaderSupport を何かしらの都合で上書きしたい場�
 
 詳しい実装は [lilToonAtlasBaker.shader](https://github.com/ReinaS-64892/TexTransTool/blob/724edfa6a8f5df5b6be99c535e001de884f108b2/Runtime/TextureAtlas/AtlasShaderSupport/liltoon/lilToonAtlasBaker.shader) を参考にしてください。
 
-### AtlasMaterialPostProses
+### AtlasMaterialPostProcess
 
 アトラス化した後のテクスチャーをマテリアルに割り建てた後に、調整しなければならないシェーダー固有の問題を解決するための物
 

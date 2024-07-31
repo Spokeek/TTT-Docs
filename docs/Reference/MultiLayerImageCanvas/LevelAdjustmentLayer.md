@@ -21,8 +21,8 @@ LevelAdjustmentLayer は実験的なコンポーネントです！予告なく�
 - Input Floor : 入力の下限
 - Input Ceiling : 入力の上限
 - Gamma : 値のガンマ補正
-- OutputFloor : 出力の下限
-- OutputCeiling : 出力の上限
+- Output Floor : 出力の下限
+- Output Ceiling : 出力の上限
 
 の情報を持ち、
 
@@ -31,4 +31,4 @@ LevelAdjustmentLayer は実験的なコンポーネントです！予告なく�
 - G
 - B
 
-の四つがあります。
+の4つがあります。

@@ -10,7 +10,7 @@ TexTransToolPSDImporter は実験的な機能です！予告なく機能変更�
 
 ## 概要
 
-[PSD](https://www.adobe.com/devnet-apps/photoshop/fileformatashtml/) を ScriptedImproter を使用し、[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) とそれに連なるレイヤーとしてインポートする機能。
+[PSD](https://www.adobe.com/devnet-apps/photoshop/fileformatashtml/) を ScriptedImporter を使用し、[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) とそれに連なるレイヤーとしてインポートする機能。
 
 ## 使い方
 

@@ -18,8 +18,8 @@ MultiLayerImageCanvas は実験的なコンポーネントです！予告なく�
 
 ## レイヤーの定義
 
-- MultiLayerImageCanvas の子のゲームオブジェクトで一階層目であること
-  - 二階層目以降は、LayerFolder の子のゲームオブジェクトで一階層目であること
+- MultiLayerImageCanvas の子のゲームオブジェクトで1階層目であること
+  - 2階層目以降は、LayerFolder の子のゲームオブジェクトで1階層目であること
 - レイヤーとして動作するコンポーネントが追加されていること
 
 ## 設定項目

@@ -16,10 +16,10 @@ sidebar_position: 3
 
 - 適用時にアクティブであること、ただし [適用時に非アクティブなレンダラーを含める](#適用時に非アクティブなレンダラーを含める)が有効な場合は非アクティブでも対象となる
 - tag が EditorOnly ではないこと
-- Rendarar の持つ Mesh が存在すること
-- Rendarar の持つ Mesh の UV0 が存在すること
-- Rendarar の持つマテリアルが一つ以上存在すること
-- Rendarar の持つマテリアルに Null が含まれていないこと
+- Renderer の持つ Mesh が存在すること
+- Renderer の持つ Mesh の UV0 が存在すること
+- Renderer の持つマテリアルが1つ以上存在すること
+- Renderer の持つマテリアルに Null が含まれていないこと
 
 ### マテリアルが持つテクスチャー
 
@@ -45,7 +45,7 @@ sidebar_position: 3
 
 ![MaterialSelector](../img/at-MaterialSelector.png)
 
-アトラス化の対象の選択、と大きさの優先度を指定できます。
+アトラス化の対象の選択と、大きさの優先度を指定できます。
 
 必要なマテリアルが表示されていない場合、「リフレッシュマテリアル」ボタンを使用すると治る場合があります。
 
@@ -56,7 +56,7 @@ sidebar_position: 3
 #### アトラステクスチャーサイズ
 
 アトラス化した後のテクスチャのサイズで、横幅と縦幅に使われ、正方形になります。
-ただし、アトラス化対象が小さいとき、二のべき乗のステップで上部分が切り取られ横長な長方形になることがあります。
+ただし、アトラス化対象が小さいとき、2のべき乗のステップで上部分が切り取られ横長な長方形になることがあります。
 
 #### パディング
 
@@ -77,7 +77,7 @@ sidebar_position: 3
 アトラス化を適用するときにマテリアルを強制的に結合する機能
 
 有効な時に、追加の項目が表示されます。  
-![AtlasMargeMaterialSetting](../img/at-AtlasMargeMaterialSetting.png)
+![AtlasMergeMaterialSetting](../img/at-AtlasMergeMaterialSetting.png)
 
 ##### プロパティベイク設定
 

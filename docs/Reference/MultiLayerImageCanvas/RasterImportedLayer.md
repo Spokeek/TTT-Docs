@@ -10,7 +10,7 @@ RasterImportedLayer は実験的なコンポーネントです！予告なく機
 
 ## 概要
 
-[TTT PSD Improter](/docs/Reference/TexTransToolPSDImporter)などからインポートされたラスターレイヤーデータを使用するためのレイヤーです。
+[TTT PSD Importer](/docs/Reference/TexTransToolPSDImporter)などからインポートされたラスターレイヤーデータを使用するためのレイヤーです。
 
 ## 設定項目
 
