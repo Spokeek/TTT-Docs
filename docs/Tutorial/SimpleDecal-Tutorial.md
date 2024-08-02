@@ -52,7 +52,7 @@ SimpleDecal はただデカールができる...ただ"テクスチャを直感�
 
 設定が終わったらプレビューしてみましょう！
 
-![GradationPreview](img/ad-GradationPreview.png)
+![GradationPreview](img/sd-GradationPreview.png)
 
 下からきれいなグラデーションが入っていることがわかりますが...もっと違った色の入れ方がしたいってことがあると思います。
 
