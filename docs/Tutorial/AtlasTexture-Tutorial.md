@@ -64,7 +64,7 @@ Quest対応の時ケースで、できるだけ数を減らすなら...すべて
 ビルドしてみるとQuest用のマテリアルに置き換えられ、テクスチャとマテリアルも1つになっていることを確認できます！
 
 最後に注意点！  AtlasTexture のマテリアルの結合は __マテリアルをまとめるだけ__ で、__マテリアルスロットの結合はできません__。  
-メッシュをマージしながらマテリアルスロットも削減できる[Anatawa12/AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer)の[MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/)との併用を強く推奨します。
+メッシュをマージしながらマテリアルスロットも削減できる[Anatawa12/AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer)の[TraceAndOptimize](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/)や[MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/)との併用を強く推奨します。
 
 ## クレジット
 
