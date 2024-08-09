@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# SimpleDecal Tutorial
+# SimpleDecalのチュートリアル
 
 ちょっと色を変えるだけであっても、マテリアルで全部変えるか、外部ツールで頑張るかぐらい。  
 前者は細かい調整ができないし、後者は UV 理解しなければいけない、
@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## チュートリアル
 
-はじめに、新規ゲームオブジェクトを生成し AddComponent から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
+はじめに、新規ゲームオブジェクトを生成し Add Component から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
 
 ![AddComponent](img/sd-AddComponent.png)
 
@@ -27,12 +27,12 @@ sidebar_position: 2
 ![ScaleSetting](img/sd-ScaleSetting.png)
 
 たとえば...ほっぺに模様を張るときだったらこんな感じ！
-![Position Example](img/sd-PotitionExample.png)
+![Position Example](img/sd-PositionExample.png)
 
 いい感じの場所にデカールが張られていたことが確認できたら、リアルタイムプレビューを終了しましょう！
 ![Preview](img/sd-Preview.png)
 
-最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入って入れれば、  
+最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入っていれば、  
 アバターアップロード時に自動でデカールが適応されるので、アバター配下に移動するのをお忘れなく。
 
 ## グラデーションを入れるチュートリアル
@@ -52,24 +52,20 @@ SimpleDecal はただデカールができる...ただ"テクスチャを直感�
 
 設定が終わったらプレビューしてみましょう！
 
-![GradationPreview](img/ad-GradationPreview.png)
+![GradationPreview](img/sd-GradationPreview.png)
 
 下からきれいなグラデーションが入っていることがわかりますが...もっと違った色の入れ方がしたいってことがあると思います。
 
-そんな時は TexTransTool では ブレンドタイプキーを変えることで 約30個の標準的な色合成を使うことができます！
+そんな時は TexTransTool では ブレンドタイプキーを変えることで 30個以上の標準的な色合成を使うことができます！
 
 ![BlendTypeKey](img/sd-BlendTypeKey.png)
 
-画像は左上から順に上の画像で列挙されている順の物でこのように入れることが可能です！
-
-![BlendTypeKeyList](img/sd-BlendTypeKeyList.png)
-
-量が多いですが、すべてを覚える必要はないので適当にいじっていい感じになったものを使うのが良いでしょう。
+量が多いですが、すべてを覚える必要はないので適当にいじっていい感じになったものを使うのが良いでしょう！
 
 今回はグラデーションの画像に青色の透過グラデーションを使用しましたが、白色の透過グラデーション画像を使用すれば、カラーの項目からその場で色を変えてグラデーションとして使用することができます  
 ![Color](img/sd-Color.png)
 
-合成モード(ブレンドタイプキー)と入れる色を調整すれば、いろいろな色のグラデーションを簡単に、そして非破壊で入れることができるでしょう！
+合成モード(ブレンドタイプキー)と入れる色を調整すれば、いろいろな色のグラデーションを簡単に、そして非破壊で入れることができますね！
 
 ## クレジット
 
