@@ -14,64 +14,58 @@ Using AtlasTexture ,tedious reducing VRAM usage made a __non-destructive and sim
 
 ## Tutorial
 
-このチュートリアルでは別の衣装を使っているけど、
-デフォルトの衣装が一部使われていて、デフォルト衣装のテクスチャに無駄が生じているケースでアトラス化を使ってみましょう！  
+This tutorial use a different costume and use default costume part.
+This case the default costume has  wasted texture, trying atlasing!  
 ![MilkRe](img/at-MilkRe.png)
 
-新しくゲームオブジェクトを生成して AddComponent から TexTransTool/TTT AtlasTexture で追加することで使用することができます。  
-![AddComponent](img/at-AddComponent.png)
+Right click to avatar root next left click to "TexTransTool/TTT AtlasTexture"!
+![CreateAtlasTexture](img/at-CreateAtlasTexture.png)
 
-まず最初に、アトラス化をしたいテクスチャを持ったレンダラー(メッシュ)の範囲を指定しましょう  
-![SetTargetRoot](img/at-SetTargetRoot.png)
+Then it will look like the example image! GameObject AtlasTexture Generated within Avatar, and the materials avatar contained be list display.
+![CreateResult](img/at-CreateResult.png)
+If not, this may be because the AtlasTexture not within Avatar or have an older TexTransTool version.
 
-これに設定したオブジェクト配下にあるものすべてがアトラス化の対象の候補に入ります  
-このケースの時はアバタールートを指定するのが手っ取り早いですね！  
-![MaterialList](img/at-MaterialList.png)
-
-設定したらマテリアル一覧が表示されます。この場合は、テクスチャーの無駄が出ているデフォルト衣装と追加した衣装のテクスチャをアトラス化をしたいので  
-Milk-Re_Costume と Milk RE174 N のチェックボックスを有効化します。  
+next, I want atlasing the texture of default costume and added costume, which have wasted textures,  
+so enable the check box of `Milk-Re_Costume` and `Milk RE174 N`.  
 ![SelectMaterial](img/at-SelectMaterial.png)
 
-設定できたら プレビューしてみましょう！  
-![PreviewButton](img/at-PreviewButton.png)
+Once have setting, let's do build `Manual Bake Avatar` or UnityEditor play button!
+![ApplyOnPlay](img/at-ApplyOnPlay.png)
+Like the example image, no error in the NDMF console, If the Atlas Relocate Result displayed then it working properly!
 
-プレビューしたら、見た目には大きな変化がなく、コンソールにエラーが出てなく、マテリアル選択のUIが非表示になっていたら正常にできています！
-![Preview](img/at-Preview.png)
+If you want to see how it is atlasing, viewing texture in material from the renderer of any costume renderer, it should look like of right in example image!
 
-...さすがにどんな感じにアトラス化されてるかみたいですよね！  
-そんな時はアトラス化した衣装の適当なレンダラーのインスペクターからマテリアルを開きメインテクスチャーを見るとその結果を確認することができます  
-![AtlasResult](img/at-AtlasResult.png)
+It's well atlasing! It looks good✨
 
-しっかりとアトラス化されていますね！いい感じです✨
+Last, if it works correctly like the example image, it will be auto applied when avatar upload!
 
-最後に、プレビューを終了して、アバターの配下にAtlasTextureを追加したゲームオブジェクトを入れておけば、  
-アバターアップロード時に自動でアトラス化が適用されます！
+If it does not work correctly like the example image ( Atlas Relocate Result not displayed, No atlased material exists, etc... )  
+in that case, so check [Important notice for uploading](./index.mdx#important-notice-for-uploading) or is material to be atlased correctly selected and etc.
 
-## Quest対応のためのアトラス化とマテリアルの結合のチュートリアル
+## Atlasing and material merging tutorial for Quest support
 
-これは 無駄を削るというよりもQuest対応のための、見た目を維持できない最適化になりますが、  
-Quest対応をするときに必要になるマテリアル数の削減やVRAMの削減をするための方法です！
+This is not an optimization but a load reduction for Quest support,  
+a way to reduce Material count and VRAM usage, at the expense of visuals.
 
-まず前提として上記のチュートリアルは完全に理解している前提で始めます。
+First, premise of fully understand the above tutorial.
 
-Quest対応の時ケースで、できるだけ数を減らすなら...すべてのマテリアルとテクスチャをアトラス化対象に入れましょう！  
-![QestAllMaterialSelect](img/at-QestAllMaterialSelect.png)
+Need to reduce count for Quest support ... make to include all material to atlas target.  
+![QuestAllMaterialSelect](img/at-QuestAllMaterialSelect.png)
 
-つぎに
+Next! setting these items and are done.
 
-- アトラス化設定のマテリアルの結合にチェックを入れる
-- プロパティベイク設定をBakeに変更する
-- そしてQuest用のマテリアルを結合時マテリアルの参照に入れる
-- テクスチャーを強制的にセットするにチェックを入れる
+- Enable MaterialMerge from AtlasSettings
+- Set PropertyBakeSetting to Bake
+- Set MergeReferenceMaterial to Material for Quest
+- Enable ForceSetTexture
 
-をすれば設定は完了です！  
-![QestAtlasSettings](img/at-QestAtlasSettings.png)  
-プレビューをしてみるとQuest用のマテリアルに置き換えられ、テクスチャとマテリアルも一つになっていることを確認できます！
+![QuestAtlasSettings](img/at-QuestAtlasSettings.png)  
+If build, can check it material replaced for Quest and texture and material is one!
 
-最後に注意点！  AtlasTexture のマテリアルの結合は __マテリアルをまとめるだけ__ で、__マテリアルスロットの結合はできません__。  
-メッシュをマージしながらマテリアルスロットも削減できる[Anatawa12/AvatarOptimaizer](https://github.com/anatawa12/AvatarOptimizer)の[MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/)との併用を強く推奨します。
+One final note! AtlasTexture MaterialMerge is __just merge the Material__, it can __not merge Material Slot__.  
+I strongly recommended using it in combination with [TraceAndOptimize](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/) or [MergeSkinnedMesh](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/) in [Anatawa12/AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer) ,which merge Mesh and can merge MaterialSlot same time.
 
-## クレジット
+## Credit
 
 - あまとうさぎ/Milk Re : https://booth.pm/ja/items/2953391
 - るるくショップ/RE174 : https://ruruku14.booth.pm/items/4053389
