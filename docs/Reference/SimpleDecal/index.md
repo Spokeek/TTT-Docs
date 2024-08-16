@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 
@@ -109,6 +109,10 @@ MipMapでにじまないようにするためのパディングの幅です。
 #### アイランド選択
 
 [アイランドセレクター](/docs/Reference/IslandSelector)を用いて、デカールの描画範囲をアイランド単位でマスクすることができます。
+
+#### OverrideDecalTextureWithMultiLayerImageCanvas
+
+[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) の内容をそのまま [デカールテクスチャー](#デカールテクスチャー) として使用できる機能
 
 #### 深度デカール
 

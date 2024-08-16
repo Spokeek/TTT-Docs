@@ -1,7 +1,3 @@
----
-sidebar_position: 11
----
-
 # SingleGradationDecal
 
 ## 概要
