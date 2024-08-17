@@ -10,7 +10,7 @@ Then, take it to Blender, do UV re mapping , do bake at Texture matches UV , tho
 
 How tedious !!!
 
-Using AtlasTexture ,tedious reducing VRAM usage made a __non-destructive and simply__!
+AtlasTexture makes the tedious task of reducing VRAM usage __non-destructive and easy!__
 
 ## Tutorial
 
