@@ -6,7 +6,7 @@ sidebar_position: 1
 
 TexTransTool のロゴは、TexTransTool を使うことを前提としていたり、TexTransTool を用いて高度な表現が比較的容易にできることをユーザーに示すことを目的としていて、混乱を避けるため、製品を宣伝する際に TexTransTool のロゴを使用したい方向けのガイドラインです。
 
-このガイドラインに沿った利用に関しては事前許可なくロゴを利用できますが、ロゴの使用が適切であるかどうかの最終的な判断は [ReinaSakiria](#reinasakiria) と [みーりゃ](#みーりゃ) に委ねられ、不適切だと判断された場合は利用を中止していただく場合があります。
+このガイドラインに沿った利用に関しては事前許可なくロゴを利用できますが、ロゴの使用が適切であるかどうかの最終的な判断は [ReinaSakiria](#reinasakiria) に委ねられ、不適切だと判断された場合は利用を中止していただく場合があります。
 
 また、ガイドラインにそぐわない場合でも、ご連絡くだされば個別検討できる場合があります。[下記連絡先](#連絡先)にてお気軽にご連絡ください。
 
@@ -34,14 +34,9 @@ TexTransTool のロゴは、TexTransTool を使うことを前提としていた
 
 ## 連絡先
 
-ご不明点や、上記の条件にそぐわない利用許可をお求めの場合は、ReinaSakiria または みーりゃ ご連絡ください。
+ご不明点や、上記の条件にそぐわない利用許可をお求めの場合は、ReinaSakiria にご連絡ください。
 
 ### ReinaSakiria
 
 - X (Twitter):[@ReinaS-64892](https://twitter.com/ReinaS_64892)
 - Misskey(ActivityPub):[@ReinaS_64892@misskey.niri.la](https://misskey.niri.la/@ReinaS_64892)
-
-### みーりゃ
-
-- X (Twitter):[@Miriya_VRC](https://twitter.com/Miriya_VRC)
-- Misskey(ActivityPub):[@Miriya@misskey.io](https://misskey.io/@Miriya)
