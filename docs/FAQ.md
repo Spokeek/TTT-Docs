@@ -15,3 +15,13 @@ TexTransTool はマテリアル置き換え等のアニメーション系の影�
 - AtlasTexture は UV の変更及びメッシュの置き換えは残ったまま、マテリアルだけもともとの物に戻されてしまい、UVの参照位置の違いによりテクスチャ等が破綻した状態になります。
 
 これらの解決策はマテリアルアニメーションを行わないことで可能なので削除してください！
+
+## アップロード時やEditorの再生時、マニュアルベイク時に適用されない
+
+[チュートリアル](/docs/Tutorial#アップロードの時の注意点)に書かれている内容もご参照ください！
+
+そして、プロジェクトに TexTransTool が対応している [NDMF](https://github.com/bdunderscore/ndmf) が導入されているかもご確認ください！
+
+特に、 TexTransTool のプレリリース版を使用している場合、[NDMF](https://github.com/bdunderscore/ndmf) もプレリリース版を使用する必要がある場合があります！
+
+[NDMF](https://github.com/bdunderscore/ndmf) のインストールの仕方は [MAのドキュメント](https://modular-avatar.nadena.dev/ja/docs/intro#%E3%83%86%E3%82%B9%E3%83%88%E7%89%88)を参考にしてください！

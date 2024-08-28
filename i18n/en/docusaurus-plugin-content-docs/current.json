@@ -4,8 +4,8 @@
     "description": "The label for version current"
   },
   "sidebar.documentSidebar.category.チュートリアル": {
-    "message": "チュートリアル",
-    "description": "The label for category チュートリアル in sidebar documentSidebar"
+    "message": "Tutorial",
+    "description": "The label for category Tutorial in sidebar documentSidebar"
   },
   "sidebar.documentSidebar.category.詳細情報": {
     "message": "詳細情報",

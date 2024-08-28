@@ -2,71 +2,62 @@
 sidebar_position: 2
 ---
 
-# SimpleDecalのチュートリアル
+# SimpleDecal Tutorial
 
-ちょっと色を変えるだけであっても、マテリアルで全部変えるか、外部ツールで頑張るかぐらい。  
-前者は細かい調整ができないし、後者は UV 理解しなければいけない、
+Even if it just change the color a little, change everything with Material, or work hard with external tools…
+The former does not allow for fine-tuning, and the latter requires an understanding of UV.
 
-でも！ SimpleDecal を使えば UV を理解しなくても直感的に、  
-テクスチャに柄や模様、それに加えて髪の毛のメッシュなどを追加することが、非破壊的で簡単にできます！
+But! with SimpleDecal, can intuitively without understanding UV,
+It is a non-destructive and easy way to patterns, designs and even hair meshes to bake to texture!
 
-## チュートリアル
+## Tutorial
 
-はじめに、新規ゲームオブジェクトを生成し Add Component から TexTransTool/TTT SimpleDecal で追加することで使用することができます。
+First, Right click to avatar root next left click to "TexTransTool/TTT SimpleDecal"!
+![CreateSimpleDecal](img/sd-CreateSimpleDecal.png)
 
-![AddComponent](img/sd-AddComponent.png)
-
-そしたら、レンダラー設定のターゲットレンダラーにデカールを張りたいレンダラー(メッシュ)を、  
-そしてデカールテクスチャーにそれらレンダラーに張り付けたい柄や模様のテクスチャーを設定したら  
+Then, in the TargetRenderer on RendererSetting, select the Renderer(mesh) want to apply the decal,  
+and set the pattern texture you want to apply to that renderer to DecalTexture.  
 ![BasicSetting](img/sd-BasicSetting.png)
 
-次は位置やサイズ調整ですが、調整しやすいようにするためにリアルタイムプレビューを有効化しましょう！
-![RealTimePreviewButton](img/sd-RealTimePreviewButton.png)
-
-デカールを張りたい場所や、角度の調整を行い、 大きさや奥行きは下記画像のスケールと最大距離を操作して調整します。  
+Next!、operate and adjust where to want place the decal, and angle, and adjust the size and depth by manipulating reference the Scale and MaxDistance in the example image.  
 ![ScaleSetting](img/sd-ScaleSetting.png)
 
-たとえば...ほっぺに模様を張るときだったらこんな感じ！
+For example...if where to add a pattern on cheek, it would look like this!
 ![Position Example](img/sd-PositionExample.png)
 
-いい感じの場所にデカールが張られていたことが確認できたら、リアルタイムプレビューを終了しましょう！
-![Preview](img/sd-Preview.png)
+The settings now complete, auto apply when upload!
 
-最後に、アバターの配下にSimpleDecalを追加したゲームオブジェクトが入っていれば、  
-アバターアップロード時に自動でデカールが適応されるので、アバター配下に移動するのをお忘れなく。
+## Tutorial for adding Gradient
 
-## グラデーションを入れるチュートリアル
+SimpleDecal is not just a tool for "intuitively pasting textures".
 
-SimpleDecal はただデカールができる...ただ"テクスチャを直感的に張り付ける"だけのツールではないのでここでは特殊な使い方の一例である、  
-髪の毛のグラデーションを入れる使い方のチュートリアルです！
+This tutorial is a special use case for adding gradients to hair!
 
-前提として上記のチュートリアルは完全に理解していることを前提に始めます。
+premise of fully understand the above tutorial.
 
-まず適当なグラデーション素材を用意し、それを SimplDecal に設定し、SimpleDecal の位置や大きさ、角度を Milk の前髪に入れる場合は、画像のように配置します。
+Prepare an appropriate gradation texture, that is set to SimpleDecal, adjustment position and rotation!  
+If Milk's bangs, place it like the example image.
 
 ![GradationExample](img/sd-GradationExample.png)
 
-次にグラデーションを範囲内のポリゴンすべてに反映するためにサイドカリング(裏面に張らなくする設定)を無効化します
+Next, disable SideCulling(back culling setting) to apply the gradient to all polygons within range.
 
 ![SideCulling](img/sd-SideCulling.png)
 
-設定が終わったらプレビューしてみましょう！
+After settings maybe it looks like the image!
 
 ![GradationPreview](img/sd-GradationPreview.png)
 
-下からきれいなグラデーションが入っていることがわかりますが...もっと違った色の入れ方がしたいってことがあると思います。
-
-そんな時は TexTransTool では ブレンドタイプキーを変えることで 30個以上の標準的な色合成を使うことができます！
+See beautiful gradation! ... but may want to a differently color blending!
+In such cases, the TexTransTool is available for over 30 standard color blends by changing the BlendTypeKey!
 
 ![BlendTypeKey](img/sd-BlendTypeKey.png)
 
-量が多いですが、すべてを覚える必要はないので適当にいじっていい感じになったものを使うのが良いでしょう！
+There are so many! Use the one that looks good!
 
-今回はグラデーションの画像に青色の透過グラデーションを使用しましたが、白色の透過グラデーション画像を使用すれば、カラーの項目からその場で色を変えてグラデーションとして使用することができます  
+That tutorial over. one final, this tutorial is used a blue gradient, but if use a white gradient image, can change tha color on the spot from the Color and use it!  
 ![Color](img/sd-Color.png)
 
-合成モード(ブレンドタイプキー)と入れる色を調整すれば、いろいろな色のグラデーションを簡単に、そして非破壊で入れることができますね！
-
-## クレジット
+## Credit
 
 - あまとうさぎ/Milk Re : https://booth.pm/ja/items/2953391
