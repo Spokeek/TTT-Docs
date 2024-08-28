@@ -14,7 +14,7 @@ YAsixFixedGradientLayer は実験的なコンポーネントです！予告な�
 
 ## 設定項目
 
-[GeneralCommonLayerSetting](./GeneralCommonLayerSetting.md)の設定を持ちます。
+[GeneralCommonLayerSetting](./GeneralCommonLayerSetting)の設定を持ちます。
 
 ### Gradation
 
