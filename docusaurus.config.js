@@ -23,7 +23,7 @@ const config = {
   organizationName: 'Reina_Sakiria', // Usually your GitHub org/user name.
   projectName: 'TTT-Docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -53,6 +53,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ReinaS-64892/TTT-Docs/tree/main',
+        },
+        blog: {
+          onUntruncatedBlogPosts: 'ignore'
         },
         theme: {
           customCss: './src/css/custom.css',
