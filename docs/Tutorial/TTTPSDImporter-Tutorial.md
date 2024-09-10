@@ -9,8 +9,8 @@ Photoshop や Clip Studio Paint を持ってないけど、色改変したい！
 なら [GIMP](https://www.gimp.org/) や [Krita](https://krita.org/) でも使う? ...それらのソフトだと PSD が正しく読めないって?  
 別におかしなことじゃない、それらソフトは PSD を扱うことを目的としているわけじゃないのだから、そもそもお門違いな話だ！
 
-そもそも PSD に互換性なんてない、Photoshop と Clip Studio Paint がほかに比べて近いから何とかなってるだけにすぎないんだよ。  
-それでもね... PSD に互換性がなかったとしてもね...そのソフトウェアに対して、 __できるだけ互換性のある実装__ を作ることはできる。
+そもそもペイントソフト間に互換性を作ることなど不可能、 Photoshop と Clip Studio Paint がほかに比べて近いから何とかなってるだけにすぎないんだよ。  
+それでもね...ペイントソフト間に互換性がなかったとしてもね...そのソフトウェアに対して、 __できるだけ互換性のある実装__ を作ることはできる。
 
 それが、 [TexTransTool PSD Importer](/docs/Reference/TexTransToolPSDImporter) と [MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas)！  
 これらを使えば Photoshop か Clip Studio Paint から出力された PSD をメジャーな範囲であれば高い再現度で扱うことができるんだ！  
@@ -32,7 +32,7 @@ TTT PSD Importer と MultiLayerImageCanvas は実験的なコンポーネント�
 しばらくしたら、PSD が画像から Prefab になります。  
 ![IntoPrefab](./img/psd-IntoPrefab.png)
 
-そしたら、インポートした PSD をアバターに適用してみましょう！　　
+そしたら、インポートした PSD をアバターに適用してみましょう！  
 まずは、アバターにそのプレハブを Drag & Drop！  
 ![DragAndDropToAvatar](./img/psd-DragAndDropToAvatar.png)
 
