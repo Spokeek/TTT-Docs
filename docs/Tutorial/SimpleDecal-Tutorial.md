@@ -24,6 +24,9 @@ sidebar_position: 2
 
 たとえば...ほっぺに模様を張るときだったらこんな感じ！
 ![Position Example](img/sd-PositionExample.png)
+:::note
+ギズモが表示されないときは、[ここ](/docs/FAQ#ギズモが表示されない)をご参照ください。
+:::
 
 これで設定は終わり、アップロード時に自動で適用されます！
 
