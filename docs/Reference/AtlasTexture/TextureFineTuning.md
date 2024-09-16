@@ -161,3 +161,45 @@ AtlasTexture が生成したテクスチャを プロパティ間でコピーす
 ### MergeChildren
 
 親以外のマージ対象を設定できます。
+
+## 詳しい挙動
+
+このテクスチャ詳細設定は二つのフェーズに分かれています。
+
+テクスチャをどのような状態にするか、設定を決めるフェーズと、その情報を基にテクスチャに変更を適用するフェーズ。
+
+### 設定フェーズ
+
+コンポーネントから操作するのはこのフェーズのこと。
+
+具体的にどのような順番で設定が適用されるかというと次の順番で、
+
+- 実験的機能の [自動リファレンスコピー設定](/docs/Reference/AtlasTexture#自動リファレンスコピー設定) と [自動マージテクスチャー設定](/docs/Reference/AtlasTexture#自動マージテクスチャー設定)
+- [テクスチャー詳細設定](/docs/Reference/AtlasTexture#テクスチャー詳細設定) を上から順に
+- [テクスチャ個別詳細設定](/docs/Reference/AtlasTexture#テクスチャ個別詳細設定)
+
+の順に設定を上書きして行き、下の物が優先される仕様です。
+
+### 適用フェーズ
+
+設定フェーズで決定されたテクスチャに対する設定を下の順番で適用します。
+
+- Resize
+- ColorSpace
+- MipMap
+- CompressionQuality
+- DiscardAlphaChannel
+- MergeTexture
+- ReferenceCopy
+- Remove
+
+これ元に考える必要があるのはこの二つ
+
+- MergeTexture
+- ReferenceCopy
+
+これらは特定のプロパティの設定を継承したり、結合したりするわけですが、
+
+MergeTexture の場合は基本的に Parent に設定されたテクスチャーの設定を継承、
+
+ReferenceCopy はソースのテクスチャーをコピーするので、コピーターゲットが持っていたテクスチャー情報は破棄され、ソースのテクスチャの設定になります。
