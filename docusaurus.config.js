@@ -82,6 +82,7 @@ const config = {
             position: 'left',
             label: 'ドキュメント',
           },
+          {to: 'blog', label: 'ブログ', position: 'left'}, // or position: 'right'
           {
             type: 'localeDropdown',
             position: 'right',
