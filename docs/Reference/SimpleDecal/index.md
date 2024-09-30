@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 
@@ -49,7 +49,7 @@ sidebar_position: 4
 
 #### ターゲットプロパティネーム
 
-デカールを張るテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName.md)
+デカールを張るテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName)
 
 ### スケール設定
 
@@ -110,6 +110,10 @@ MipMapでにじまないようにするためのパディングの幅です。
 
 [アイランドセレクター](/docs/Reference/IslandSelector)を用いて、デカールの描画範囲をアイランド単位でマスクすることができます。
 
+#### OverrideDecalTextureWithMultiLayerImageCanvas
+
+[MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas) の内容をそのまま [デカールテクスチャー](#デカールテクスチャー) として使用できる機能
+
 #### 深度デカール
 
 デカールを張る方向から一番手毎の部分にのみデカールが張られるようにできる機能
@@ -118,14 +122,14 @@ MipMapでにじまないようにするためのパディングの幅です。
 
 深度判定を反転し、"一番手前だけ"を"後ろ側になった場所すべて"にします。
 
-## よくある Q & A
+## SimpleDecalに関する FAQ
 
 ### 影色にデカールが適用されない & エミッションにもデカールを適用したい
 
-デフォルト設定ではSimpleDecalは "_MainTex" にデカールを適用します。  
+デフォルト設定では SimpleDecal は "_MainTex" にデカールを適用します。  
 前者の場合lilToonであれば 影色1のテクスチャー "_ShadowColorTex" などが存在し、それらに "_MainTex" とは違うテクスチャーが入っているようなマテリアルで発生し、それにもデカールを適用することで解決できます。
 
-具体的にはデカールを複製し、[ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName.md)で該当するテクスチャーのプロパティを選択すること。
+具体的にはデカールを複製し、[ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName)で該当するテクスチャーのプロパティを選択すること。
 ![Q&A-ShadowDecal](../img/sd-Q&A-ShadowDecal.png)
 
 後者のエミッションの場合でも、エミッション用のプロパティを選択することで解決できますが、該当となるプロパティにテクスチャーが割り当てられていない場合適用されないのでご注意ください。

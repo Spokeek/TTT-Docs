@@ -23,7 +23,7 @@ TexTransToolPSDImporter は実験的な機能です！予告なく機能変更�
 - [ラスターレイヤー](/docs/Reference/MultiLayerImageCanvas/RasterImportedLayer)
 - [レイヤーフォルダー](/docs/Reference/MultiLayerImageCanvas/LayerFolder)
 - [べたぬりレイヤー](/docs/Reference/MultiLayerImageCanvas/SolidColorLayer)
-- [色調・彩度・明度 調整レイヤー](/docs/Reference/MultiLayerImageCanvas/HSVAdjustmentLayer)
+- [色調・彩度・明度 調整レイヤー](/docs/Reference/MultiLayerImageCanvas/HSLAdjustmentLayer)
 - [レベル調整レイヤー](/docs/Reference/MultiLayerImageCanvas/LevelAdjustmentLayer)
 - [選択的色域調整レイヤー](/docs/Reference/MultiLayerImageCanvas/SelectiveColoringAdjustmentLayer)
 

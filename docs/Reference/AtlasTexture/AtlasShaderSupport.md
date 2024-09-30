@@ -24,6 +24,9 @@ AtlasShaderSupport は実験的な機能です！予告なく機能変更や削�
 
 - ContainsName : シェーダ名の部分一致
 - ShaderReference : シェーダー参照一致
+- NotComparer : 一つ指定し一致判定の反転
+- AndComparer : 複数の Comparer を指定し AND 演算
+- OrComparer : 複数の Comparer を指定し OR 演算
 
 ### Priority
 
@@ -39,12 +42,12 @@ lilToon の AtlasShaderSupport を何かしらの都合で上書きしたい場�
 
 この定義が差すテクスチャーのプロパティ名
 
-#### Comparer
+#### AtlasDefineConstraints
 
 定義がマテリアル設定に応じて、存在するかどうかを判定する設定
 
-- AndConstraints : 複数の Comparer を And演算 で判定
-- OrConstraints : 複数の Comparer を Or演算 で判定
+- AndConstraints : 複数の Constraints を And演算 で判定
+- OrConstraints : 複数の Constraints を Or演算 で判定
 - FloatPropertyValueGreater : Float のプロパティの値が指定値以上(以下)かで判定
 - FloatPropertyValueEqual : Float のプロパティの値が指定値(以外)かで判定
 - IntPropertyValueGreater : Int のプロパティの値が指定値以上(以下)かで判定
@@ -67,7 +70,7 @@ lilToon の AtlasShaderSupport を何かしらの都合で上書きしたい場�
 ベイクが行われるとき、`_MainTex` であれば、 `Bake_MainTex` のように、 プロパティ名の前に `Bake` とついた シェーダーキーワードが設定され、その時
 
 - その定義のテクスチャー 例えば `_MainTex` と、[BakePropertyNames](#bakepropertynames) に指定したプロパティが設定されます。
-- そのテクスチャーが [Comparer](#comparer) により無効だった場合 シェーダーキーワード `Constraint_Invalid` が設定されます。
+- そのテクスチャーが [AtlasDefineConstraints](#atlasdefineconstraints) により無効だった場合 シェーダーキーワード `Constraint_Invalid` が設定されます。
 
 詳しい実装は [lilToonAtlasBaker.shader](https://github.com/ReinaS-64892/TexTransTool/blob/724edfa6a8f5df5b6be99c535e001de884f108b2/Runtime/TextureAtlas/AtlasShaderSupport/liltoon/lilToonAtlasBaker.shader) を参考にしてください。
 

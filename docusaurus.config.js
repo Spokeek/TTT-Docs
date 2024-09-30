@@ -23,15 +23,23 @@ const config = {
   organizationName: 'Reina_Sakiria', // Usually your GitHub org/user name.
   projectName: 'TTT-Docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'jp',
-    locales: ['jp'],
+    defaultLocale: 'ja',
+    locales: ['ja', "en"],
+    localeConfigs: {
+      ja: {
+        htmlLang: 'ja',
+      },
+      en: {
+        htmlLang: 'en-US',
+      },
+    },
   },
 
   presets: [
@@ -45,6 +53,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ReinaS-64892/TTT-Docs/tree/main',
+        },
+        blog: {
+          onUntruncatedBlogPosts: 'ignore'
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -70,6 +81,11 @@ const config = {
             sidebarId: 'documentSidebar',
             position: 'left',
             label: 'ドキュメント',
+          },
+          {to: 'blog', label: 'ブログ', position: 'left'}, // or position: 'right'
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/ReinaS-64892/TexTransTool',

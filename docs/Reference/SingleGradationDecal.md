@@ -1,7 +1,3 @@
----
-sidebar_position: 11
----
-
 # SingleGradationDecal
 
 ## 概要
@@ -40,4 +36,4 @@ sidebar_position: 11
 
 #### ターゲットプロパティネーム
 
-グラデーションを適用するテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName.md)
+グラデーションを適用するテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName)
