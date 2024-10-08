@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# プレビュー
+# Preview
 
-TexTransTool のコンポーネントにおいて、一時的にそのコンポーネントの実行結果を適用する機能
+A function that temporarily applies the results of a TexTransTool component.
 
-## 注意点
+## Notes
 
-- 複数のコンポーネントのプレビューを同時に行いたい場合は、TexTransGroup を用いる必要があります。
-- SimpleDecal などが使用する、元のテクスチャーへのアクセスが行われないため、場合によっては低画質になります。
-  - 特にテクスチャーの Alpha Is Transparency が有効化されていない場合、異なる結果になる場合があります。
+- If you want to preview multiple components at the same time, you must use TexTransGroup.
+- Since the original texture used by SimpleDecal, etc. is not accessed, the image quality may be low in some cases.
+  - The results may differ, especially if the texture's Alpha Is Transparency is not enabled.

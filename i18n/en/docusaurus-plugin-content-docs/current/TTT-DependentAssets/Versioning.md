@@ -2,11 +2,13 @@
 sidebar_position: 1
 ---
 
-# バージョニング
+# Versioning
 
-TexTransTool は [セマンティックバージョニング](https://semver.org/lang/ja/)を採用しています。
+TexTransTool uses [Semantic Versioning](https://semver.org).
 
-ただし、これらのバージョニングの対象として保証されるのは、
-**安定した機能としての扱いをされている一部のコンポーネントと機能**に限り、それ以外のコンポーネントや機能は保証されません。
+However, these versioning updates only guarantee that
+**some components and features that are considered stable** will be included, other components and features are not guaranteed.
 
 例えば、[SimpleDecal](/docs/Reference/SimpleDecal) の 実験的機能 や MultiLayerImageCanvas は同じメジャーバージョン間であっても互換性は保証されませんのでご注意ください。
+
+For example, please note that compatibility is not guaranteed for the experimental features like [SimpleDecal](docs/Tutorial/SimpleDecal-Tutorial) or MultiLayerImageCanvas, even between the same major versions.

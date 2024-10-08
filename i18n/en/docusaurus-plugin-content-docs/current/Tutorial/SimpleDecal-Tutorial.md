@@ -60,4 +60,4 @@ That tutorial over. one final, this tutorial is used a blue gradient, but if use
 
 ## Credit
 
-- あまとうさぎ/Milk Re : https://booth.pm/ja/items/2953391
+- あまとうさぎ/Milk Re : <https://booth.pm/ja/items/2953391>

@@ -1,3 +1,3 @@
 # PreviewGroup
 
-そのコンポーネント配下にあるすべての物をプレビューを実行できるコンポーネントで、インスペクターでそれらすべての概要が実行順で表示されます。
+A component that allows you to preview everything underneath it, and shows an overview of them all in the order they will run in the Inspector.

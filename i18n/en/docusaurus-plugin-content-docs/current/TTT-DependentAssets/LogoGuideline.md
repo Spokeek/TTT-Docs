@@ -2,46 +2,46 @@
 sidebar_position: 1
 ---
 
-# ロゴのガイドライン
+# Logo Guidelines
 
-TexTransTool のロゴは、TexTransTool を使うことを前提としていたり、TexTransTool を用いて高度な表現が比較的容易にできることをユーザーに示すことを目的としていて、混乱を避けるため、製品を宣伝する際に TexTransTool のロゴを使用したい方向けのガイドラインです。
+The TexTransTool logo is intended to show users that they are able to use TexTransTool, or that advanced expressions can be achieved relatively easily using TexTransTool. It is a guideline for those who wish to use the TexTransTool logo when advertising their products to avoid confusion.
 
-このガイドラインに沿った利用に関しては事前許可なくロゴを利用できますが、ロゴの使用が適切であるかどうかの最終的な判断は [ReinaSakiria](#reinasakiria) と [みーりゃ](#みーりゃ) に委ねられ、不適切だと判断された場合は利用を中止していただく場合があります。
+You may use the logo without prior permission provided as long as it is in accordance with these guidelines. However, the final decision on whether or not the use of the logo is appropriate rests with [ReinaSakiria](#reinasakiria) and [みーりゃ](#みーりゃ), and you may be asked to discontinue your use if it is confirmed as inappropriate.
 
-また、ガイドラインにそぐわない場合でも、ご連絡くだされば個別検討できる場合があります。[下記連絡先](#連絡先)にてお気軽にご連絡ください。
+In addition, even if your request does not comply with the guidelines, please contact us and we may be able to consider it on an individual basis. Please feel free to contact us at the [Contact details](#contact-details).
 
-## 適用製品
+## Applicable Products
 
-- TexTransTool を使用して導入できる Texture や Prefab を含む製品（追加テクスチャー、デカール用の画像、アバターや衣装など）の宣伝に使用できます。
-  - TexTransTool を使用することを前提としている場合か、TexTransTool のコンポーネントが Prefab に含まれている場合に限ります。
-- TexTransTool と互換性がある（または依存関係として要求する）アバター改変・作成用のエディタ拡張の宣伝にも使用できます。
-  - エディタ内などの独自に実装したUIには TexTransTool のロゴを使用してはいけません（どこが本家 TexTransTool なのかを明白にするため）
-- TexTransTool は製品を承認または推奨したかと思われるような方法でロゴを提示してはいけません。
-- 製品の要件を満たしている場合は、営利・非営利にかかわらずロゴを使用することができます。
+- It can be used to promote products that include textures and prefabs that can be presented as using TexTransTool (for additional textures, images for decals, avatars, costumes, etc.).
+  - Only if the use of TexTransTool is in use or if the TexTransTool component is included in the prefab.
+- It can also be used to promote editor extensions for avatar modification and creation that are compatible with TexTransTool (or require it as a dependency).
+  - The TexTransTool logo must not be used in any UI implemented independently, such as within the editor (to make it clear which is the original TexTransTool).
+- The logo must not be presented in a way that suggests that TexTransTool has approved or recommended the product.
+- If the product meets the requirements, the logo can be used for both commercial and non-commercial purposes.
 
-## ロゴの配置
+## Logo Placement
 
-- ロゴはそのまま使用してください。変更や改変をしてはいけません。
-  - ただし、背景に対して可視性を向上させるために、ロゴにアウトラインやドロップシャドウを追加することは可能。
-- ロゴをアニメーション化したり、パターンや背景の一部として使用してはいけません。
-  - ただし、動画で使う場合は、形やスタイルに大きな変更を加えない限り、トランジションアニメーションを使用することは可能。
-- ロゴは十分なコントラストと可視性を提供する方法で使用する必要があります。
-- ロゴはほかの要素から合理的な距離を保って配置し、明確な可視性と可読性を確保する必要があります。
+- Use the logo as is. Do not change or alter it.
+  - However, you may add an outline or drop shadow to the logo to improve its visibility against the background.
+- Do not animate the logo or use it as part of a pattern or background.
+  - However, if used in a video, you may use transition animations as long as they do not make significant changes to the shape or style.
+- The logo must be used in a manner that provides sufficient contrast and visibility.
+- The logo must be placed at a reasonable distance from other elements to ensure clear visibility and readability.
 
-## ロゴの色
+## Logo Color
 
-- ロゴは常に元の色で使用する必要があります。カラーバリエーションは現在準備されていないのでご注意ください。
+- The logo must always be in its original colors. Please note that color variations are not currently available.
 
-## 連絡先
+## Contact details
 
-ご不明点や、上記の条件にそぐわない利用許可をお求めの場合は、ReinaSakiria または みーりゃ ご連絡ください。
+If you have any questions or would like a permission to use that does not comply with the above conditions, please contact [ReinaSakiria](#reinasakiria) or [みーりゃ](#みーりゃ).
 
 ### ReinaSakiria
 
 - X (Twitter):[@ReinaS-64892](https://twitter.com/ReinaS_64892)
-- Misskey(ActivityPub):[@ReinaS_64892@misskey.niri.la](https://misskey.niri.la/@ReinaS_64892)
+- Misskey (ActivityPub):[@ReinaS_64892@misskey.niri.la](https://misskey.niri.la/@ReinaS_64892)
 
 ### みーりゃ
 
 - X (Twitter):[@Miriya_VRC](https://twitter.com/Miriya_VRC)
-- Misskey(ActivityPub):[@Miriya@misskey.io](https://misskey.io/@Miriya)
+- Misskey (ActivityPub):[@Miriya@misskey.io](https://misskey.io/@Miriya)

@@ -4,14 +4,15 @@ sidebar_position: 3
 
 # FAQ
 
-## アップロードしたアバターに効果が反映されないまたは壊れる
+## Uploaded avatars do not animate the effects or are corrupted
 
-主にプレビューでは正常に動作するが、VRChatにアップロードしたアバターにはプレビューのような結果にならない状態。
+The main issue is that the avatar works well in the preview, but doesn't match when uploaded on VRChat.
 
-この場合 Material置き換えアニメーションが存在しないか確認してください！
-TexTransTool はマテリアル置き換え等のアニメーション系の影響を一切考慮しません！
+In this case, please check for the presence of Material replacement animations !
+TexTransTool does not take into account any animation systems such as material replacement !
 
-- SimpleDecal などのデカール系やテクスチャ編集系は マテリアル置き換えによってもともともマテリアルに戻されてしまい、それに伴いすべて元のテクスチャになります。
-- AtlasTexture は UV の変更及びメッシュの置き換えは残ったまま、マテリアルだけもともとの物に戻されてしまい、UVの参照位置の違いによりテクスチャ等が破綻した状態になります。
+- Decals and texture editors such as SimpleDecal will be reverted back to their original material by Material Replacement, and all textures will be reverted back to their original texture.
 
-これらの解決策はマテリアルアニメーションを行わないことで可能なので削除してください！
+- AtlasTexture will leave UV changes and mesh replacements in place, but revert back to the original material, resulting in broken textures, etc. due to differences in UV reference positions.
+
+The solution to these problems is to remove the material animation, which can be done by avoiding animating the material !

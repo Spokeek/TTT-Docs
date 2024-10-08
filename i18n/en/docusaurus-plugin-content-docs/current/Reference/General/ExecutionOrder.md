@@ -10,68 +10,68 @@ The execution order is big significant especially for [SimpleDecal](/docs/Refere
 
 ## Phase
 
-ほとんどのコンポーネントには 実行するフェーズが存在します。
+Most components have a phase in which they are executed.
 
-TexTransPhase と表記されることもあり、下記五つによって構成されていて、上から順に実行されます。
+This is sometimes written as TexTransPhase, and it consists of the following five phases, which are executed in order from top to bottom.
 
 ### BeforeUVModification
 
-UVに強い依存を持ち、UVの変更がなされた後では動作できないコンポーネントが属するフェーズ
+A phase that contains components that have a strong dependency on UVs and cannot operate after UV changes are made
 
-属するコンポーネント
+Components that belong to this phase
 
 - [MultiLayerImageCanvas](/docs/Reference/MultiLayerImageCanvas)
 - [TextureBlender](/docs/Reference/TextureBlender)
 
 ### UVModification
 
-UVを書き換えるようなコンポーネントが属すフェーズ
+This phase contains components that rewrite UVs.
 
-現在属するコンポーネントは存在しませんが今後追加される可能性があります。
+Currently there are no components that belong to this phase, but they may be added in the future.
 
 ### AfterUVModification
 
-UVに依存がなく、UVが書き換えられたことによる影響がない、または受けれるコンポーネントが属するフェーズ。
+This phase contains components that are not dependent on UVs and are not affected by UV rewriting or can be affected by UV rewriting.
 
-属するコンポーネント
+Components that belong to this phase
 
 - [SimpleDecal](/docs/Reference/SimpleDecal)
 
 ### UnDefined
 
-どのフェーズに属するべきかがケースバイケースであり、ユーザーが必要に応じて定義すべきなコンポーネントが属するフェーズ
+Which phase a component should belong to is case-by-case, and the user should define it as necessary.
 
-属するコンポーネント
+Components that belong to this phase
 
 - [MaterialOverrideTransfer](/docs/Reference/MaterialOverrideTransfer)
 
 ### Optimizing
 
-最適化を行う、早い段階で動く必要のないコンポーネントが属するフェーズ
+This phase contains components that do not need to be optimized early on.
 
-属するコンポーネント
+Components that belong to this phase
 
 - [AtlasTexture](/docs/Reference/AtlasTexture)
 - [TextureConfigurator](/docs/Reference/TextureConfigurator)
 
 ## Execution order with in a phase
 
-TexTransTool が アバターに対してビルドを行うとき、 上記の五つのフェーズを順番に実行します。
+When TexTransTool builds an avatar, it executes the five phases listed above in order.
 
-同じフェーズに属すコンポーネントがどのような順序で実行されるかは、以下の三つの要素から決定されます。
+The order in which components in the same phase are executed is determined by the following three factors:
 
 ### [PhaseDefine](/docs/Reference/GroupComponent/PhaseDefine)
 
-PhaseDefine で実行フェーズを指定されたコンポーネントは一番高い優先度で実行されます。
+Components that have an execution phase specified in PhaseDefine are executed with the highest priority.
 
-PhaseDefine の範囲では、それらコンポーネントが持つフェーズの定義を無視した上で、範囲内のコンポーネントをすべて、ビルドごとに一貫性のある順序で実行します。
+The scope of a PhaseDefine ignores the phase definitions of those components and executes all components within the scope in a consistent order for each build.
 
 ### [TexTransGroup](/docs/Reference/GroupComponent/TexTransGroup)
 
-TexTransGroup の範囲のコンポーネントの中で、現在実行するフェーズと同じフェーズ定義を持つコンポーネントのみ実行され、それらコンポーネント間はビルドごとに一貫性のある順序で実行します。
+Among the components in the TexTransGroup scope, only those components that have the same phase definition as the currently executing phase will be executed, and they will execute in a consistent order from build to build.
 
 ### Other
 
-PhaseDefine にも TexTransGroup にも属さないが、現在実行するフェーズと同じフェーズ定義を持つコンポーネントは、
+Components that do not belong to either PhaseDefine or TexTransGroup but have the same phase definition as the currently executing phase
 
-一番低い優先度でかつ、順序不定な状態で実行されます。
+It will be executed with the lowest priority and in an unspecified order.

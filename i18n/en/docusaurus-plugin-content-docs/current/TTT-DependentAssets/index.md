@@ -2,6 +2,6 @@
 sidebar_position: 4
 ---
 
-# 依存したアセットなどに関して
+# Regarding assets including TexTransTool
 
-TexTransTool に依存したプレハブやツールなどを配布や作成するとき用のドキュメントです。
+This is the documentation for distributing or creating prefabs, tools, or any other projects that depend on TexTransTool.

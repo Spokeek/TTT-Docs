@@ -5,127 +5,127 @@ sidebar_position: 4
 
 # SimpleDecal
 
-## 概要
+## Overview
 
-テクスチャを平行に投影したかのように見えるテクスチャを生成し、元のテクスチャと合成することでテクスチャ改変を行う  
-[AtlasTexture](/docs/Reference/AtlasTexture)の為に作られた UVtoUV の技術を転用して作られたコンポーネント。
+Texture modification is performed by generating a texture that looks as if it were projected parallel to the original texture and compositing it with the original texture.
+The component is created by reusing the UV to UV technology created for [AtlasTexture](/docs/Reference/AtlasTexture)
 
-## デカールが張られる基準
+## Standards for applying decals
 
-- 適切なレンダラーが一つ以上指定されていること [詳細](#レンダラー設定)
-- ギズモの範囲にポリゴンが存在すること [詳細](#カリング設定)
-- 対象となるレンダラーが持つマテリアルに [ターゲットプロパティネーム](#ターゲットプロパティネーム)で指定されるテクスチャーが存在すること
+- At least one appropriate renderer must be specified [Details](#renderer-settings)
+- A polygon must exist within the range of the gizmo [Details](#texture-settings)
+- The material of the target renderer must have the texture specified by [Target property name](#target-property-name)
 
-## 設定項目
+## Setting items
 
-### レンダラー設定
+### Renderer Settings
 
-対象とするレンダラー (SkindMeshRenderer or MeshRenderer) を入れる項目。
+An item to enter the target renderer (SkindMeshRenderer or MeshRenderer).
 
-シングルレンダラーモード  
+Single renderer mode
 ![SingleRendererMode](../img/sd-SingleRendererMode.png)  
-マルチレンダラーモード  
+Multi renderer mode
 ![MultiRendererMode](../img/sd-MultiRendererMode.png)  
 
-デカールを張りたい対象が複数のレンダラーにまたがっているときに使用します。
+Use this when the object you want to apply a decal to spans multiple renderers.
 
-### テクスチャー設定
+### Texture Settings
 
 ![TextureSetting](../img/sd-TextureSetting.png)
 
-#### デカールテクスチャー
+#### Decal Texture
 
-張り付けるテクスチャーそのもの。
+The texture itself that is applied.
 
-#### カラー
+#### Color
 
-デカールテクスチャーに乗算し、貼り付けるデカールの色をその場で変更する設定
+A setting that multiplies the decal texture and changes the color of the decal to be applied on the spot.
 
-ただし、デカールテクスチャーが存在しない場合は、カラーの色がそのままデカールテクスチャーになります。
+However, if the decal texture does not exist, the color will be used as is for the decal texture.
 
-#### ブレンドタイプキー
+#### Blend Type Key
 
-デカールを元のテクスチャと合成するときの色合成を指定できる設定。[詳細](/docs/Reference/Common/BlendTypeKey)
+A setting that allows you to specify the color blend when blending the decal with the original texture. [Details](/docs/Reference/Common/BlendTypeKey)
 
-#### ターゲットプロパティネーム
+#### Target Property Name
 
-デカールを張るテクスチャの選択。 [詳細](/docs/Reference/Common/TargetPropertyName)
+Select the texture to apply the decal to [Details](/docs/Reference/Common/TargetPropertyName)
 
-### スケール設定
+### Scale Settings
 
 ![ScaleSetting-AspectFixed](../img/sd-ScaleSetting-AspectFixed.png)
 
-#### スケール
+#### Scale
 
-ローカルスケール の X ( Y) の値で、デカールを張る 横幅(と縦幅)に対応しています。
+The Local Scale X (Y) value corresponds to the width (and height) of the decal.
 
-#### アスペクト比固定
+#### Fixed aspect ratio
 
-有効だと画像のアスペクト比に応じて 縦幅 の値を自動設定します。
+When enabled, the Height value will be automatically set based on the image aspect ratio.
 
-アスペクト非固定無効化したUI  
+You can select a manual aspect ratio for the UI.  
 ![ScaleSetting-NonAspectFixed](../img/sd-ScaleSetting-NonAspectFixed.png)
 
-#### 最大距離
+#### Maximum Distance
 
-ローカルスケールの Z の値で、デカールが張られる大体の奥行きと対応しています。
+The local scale Z value corresponds to the approximate depth at which the decal will be applied.
 
-### カリング設定
+### Culling Settings
 
 ![CullingSetting](../img/sd-CullingSetting.png)
 
-#### ポリゴンカリング
+#### Polygon Culling
 
-処理を軽くするために行うポリゴンのカリング。
+Polygon culling helps reducing processing cost.
 
-メッシュに対して非常に小さいデカールを仕様たい場合にのみ、外してください。
+Only turn this off if you want to use a very small decal for your mesh.
 
-#### サイドカリング
+#### Side Culling
 
-有効だとデカールする方向から見て裏面となるポリゴンにはデカールが張られなくなります。
+When enabled, decals will not be applied to polygons that are on the back side when viewed from the direction of the decal.
 :::info
-スケールの一部がマイナスになっているとデカールする方向から見て表面に張られなくなることがあります。
+If any part of the scale is negative, the decal may not stick to the surface when viewed from the direction of application.
 :::
 
-### 詳細設定
+### Advanced Settings
 
 ![AdvansdSetting](../img/sd-AdvansdSetting.png)
 
-#### 高品質なパディング
+#### High quality padding
 
-通常パディングはとてもギザギザしたパディングになっていて、それをパディングを高品質で生成するオプションです。  
-高負荷でアバターのビルド時間の増加を招くので必要がなければ使わないほうが良いです。
+Normally, padding is very jagged, and this option generates padding with high quality.
+It is expensive and increases the avatar build time, so it is better not to use it unless necessary.
 
-#### パディング
+#### Padding
 
-MipMapでにじまないようにするためのパディングの幅です。
+The width of the padding to prevent bleeding with MipMap.
 
-### 実験的機能
+### Experimental Features
 
 :::warning
-これらは実験的機能で予告なく削除や変更が行われる可能性があります。
+These are experimental features and may be removed or changed without notice.
 :::
 
-#### アイランド選択
+#### Island Selection
 
-[アイランドセレクター](/docs/Reference/IslandSelector)を用いて、デカールの描画範囲をアイランド単位でマスクすることができます。
+You can use the [Island Selector](/docs/Reference/IslandSelector) to mask the decal drawing area on an island-by-island basis.
 
-#### 深度デカール
+#### Depth Decal
 
-デカールを張る方向から一番手毎の部分にのみデカールが張られるようにできる機能
+A function that allows you to apply decals only to the first part from the direction of application of the decal
 
-##### 深度反転
+##### Depth Inversion
 
-深度判定を反転し、"一番手前だけ"を"後ろ側になった場所すべて"にします。
+Inverts the depth judgment, changing "only the foreground" to "everywhere behind."
 
-## よくある Q & A
+## Frequently Asked Questions (FAQ)
 
-### 影色にデカールが適用されない & エミッションにもデカールを適用したい
+### Decals are not applied to shadow colors & I want to apply decals to emission as well
 
-デフォルト設定ではSimpleDecalは "_MainTex" にデカールを適用します。  
-前者の場合lilToonであれば 影色1のテクスチャー "_ShadowColorTex" などが存在し、それらに "_MainTex" とは違うテクスチャーが入っているようなマテリアルで発生し、それにもデカールを適用することで解決できます。
+By default, SimpleDecal applies the decal to "_MainTex".
+In the former case, if you use lilToon, there is a texture for shadow color 1, "_ShadowColorTex", etc, and this occurs with materials that contain a texture different from "_MainTex". You can solve this by applying a decal to that material as well.
 
-具体的にはデカールを複製し、[ターゲットプロパティネーム](/docs/Reference/Common/TargetPropertyName)で該当するテクスチャーのプロパティを選択すること。
+Specifically, duplicate the decal and select the corresponding texture property in [Target Property Name](/docs/Reference/Common/TargetPropertyName).
 ![Q&A-ShadowDecal](../img/sd-Q&A-ShadowDecal.png)
 
-後者のエミッションの場合でも、エミッション用のプロパティを選択することで解決できますが、該当となるプロパティにテクスチャーが割り当てられていない場合適用されないのでご注意ください。
+In this last case regarding emission, you can also resolve the issue by manualy selecting a property for emission, but please note that this will not be applied if no texture is assigned to the relevant property.

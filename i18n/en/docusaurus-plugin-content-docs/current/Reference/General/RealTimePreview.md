@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
-# リアルタイムプレビュー
+# Real-time preview
 
-TexTransTool の一部のコンポーネントに限り、リアルタイムにコンポーネントをプレビューできる機能
+A feature that allows you to preview components in real time, but only for some components of TexTransTool.
 
-## 注意点
+## Notes
 
-対応したコンポーネントのインスペクター以外の方法でプレビューを行った場合、
-リアルタイムプレビューではなく、[プレビュー](/docs/Reference/General/Preview) が行われることがあります。
+If you preview using a method other than the inspector of the corresponding component,
+a [preview](/docs/Reference/General/Preview) may be performed instead of a real-time preview.
